@@ -1,0 +1,68 @@
+<Window x:Class="RaftSaveEditor.App.StorageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Conteúdo do storage" Width="880" Height="570" MinWidth="700" MinHeight="460"
+        WindowStartupLocation="CenterOwner" ShowInTaskbar="False">
+    <Grid Margin="24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+            <StackPanel>
+                <TextBlock Text="{Binding Name}" FontSize="28" FontWeight="SemiBold"/>
+                <TextBlock Text="Clique ou dê duplo clique em um item para editar ID, quantidade, Uses e slot."
+                           Foreground="{StaticResource MutedBrush}" Margin="0,5,0,0"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                <Button Content="Adicionar item" Click="AddItem_Click" Margin="0,0,10,0"/>
+                <Border Background="{StaticResource AccentDarkBrush}" CornerRadius="9" Padding="14,9">
+                    <TextBlock Text="{Binding TotalUnits, StringFormat={}{0} unidades}" Foreground="{StaticResource AccentBrush}" FontWeight="SemiBold"/>
+                </Border>
+            </StackPanel>
+        </Grid>
+
+        <WrapPanel Grid.Row="1" Margin="0,18,0,12">
+            <TextBlock Text="{Binding OccupancyText}" Foreground="{StaticResource AccentBrush}" Margin="0,0,22,0"/>
+            <TextBlock Text="{Binding EmptySlots, StringFormat={}{0} slots vazios}" Foreground="{StaticResource MutedBrush}" Margin="0,0,22,0"/>
+            <TextBlock Text="{Binding TechnicalOwner}" Foreground="{StaticResource MutedBrush}"/>
+        </WrapPanel>
+
+        <DataGrid x:Name="ItemsGrid" Grid.Row="2" ItemsSource="{Binding Items}" MouseDoubleClick="ItemsGrid_MouseDoubleClick">
+            <DataGrid.GroupStyle>
+                <GroupStyle>
+                    <GroupStyle.HeaderTemplate>
+                        <DataTemplate>
+                            <Border Background="#18283A" BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,1,0,1" Padding="12,8">
+                                <TextBlock Text="{Binding Name}" Foreground="{StaticResource AccentBrush}" FontWeight="SemiBold"/>
+                            </Border>
+                        </DataTemplate>
+                    </GroupStyle.HeaderTemplate>
+                </GroupStyle>
+            </DataGrid.GroupStyle>
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Item" Width="2*">
+                    <DataGridTemplateColumn.CellTemplate><DataTemplate>
+                        <Button Style="{StaticResource LinkButton}" Click="ItemButton_Click" ToolTip="{Binding Type}"><StackPanel Orientation="Horizontal"><Image Source="{Binding IconPath}" Width="30" Height="30" Stretch="Uniform" Margin="0,0,8,0"/><TextBlock Text="{Binding Name}" VerticalAlignment="Center"/></StackPanel></Button>
+                    </DataTemplate></DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="ID" Binding="{Binding ItemId}" Width="80" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Quantidade" Binding="{Binding Amount}" Width="120" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Stack máx." Binding="{Binding StackLimitText}" Width="100" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Uses" Binding="{Binding Uses}" Width="100" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Posição" Binding="{Binding DisplaySlot}" Width="100" IsReadOnly="True"/>
+                <DataGridCheckBoxColumn Header="Alterado" Binding="{Binding IsModified, Mode=OneWay}" Width="90" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Grid Grid.Row="3" Margin="0,14,0,0">
+            <TextBlock Text="As edições ficam pendentes até você clicar em Salvar alterações na janela principal."
+                       Foreground="{StaticResource MutedBrush}" VerticalAlignment="Center"/>
+            <Button Content="Fechar" HorizontalAlignment="Right" IsCancel="True"/>
+        </Grid>
+    </Grid>
+</Window>

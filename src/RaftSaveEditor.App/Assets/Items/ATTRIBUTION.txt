@@ -1,0 +1,12 @@
+Raft item icons
+===============
+
+Source: https://raft.fandom.com/wiki/Items and each linked item page.
+The Raft Wiki content is available under CC BY-SA unless otherwise noted.
+
+Files named Game_<ID>.png were extracted from the user's local Raft installation
+for this personal editor. Raft and its game artwork are property of Redbeet
+Interactive/Axolot Games.
+
+The icons and Catalog/items.metadata.txt can be refreshed with:
+  powershell -ExecutionPolicy Bypass -File tools/Update-ItemCatalog.ps1

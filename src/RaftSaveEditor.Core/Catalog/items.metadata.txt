@@ -1,0 +1,586 @@
+# ID|Name|StackSize|MaxUses|Type|Icon|CanAdd
+# Names extracted from the installed Raft localization: pt-BR; other fields retain the verified game/wiki metadata.
+1|Piso de madeira|1|1|Building|Game_1.png|False
+2|Lastro|1|1|Building|Game_2.png|False
+3|Escada|1|1|Building|Game_3.png|False
+4|Parede de madeira|1|1|Building|Game_4.png|False
+6|Âncora fixa|5|1|Navigation|Game_6.png|True
+7|Cadeira|5|1|Building|Game_7.png|True
+8|Rede de pesca|5|1|Other|Game_8.png|True
+9|Consertar|1|1|Unclassified|Game_9.png|False
+10|Côco|20|1|Sustenance|Game_10.png|True
+11|Beterraba cozida|20|1|Sustenance|Game_11.png|True
+12|Cavalinha cozido|20|1|Sustenance|Game_12.png|True
+13|Batata cozida|20|1|Sustenance|Game_13.png|True
+14|Tubarão cozido|20|1|Sustenance|Game_14.png|True
+15|Beterraba crua|20|1|Sustenance|Game_15.png|True
+16|Cavalinha cru|20|1|Sustenance|Game_16.png|True
+17|Batata crua|20|1|Sustenance|Game_17.png|True
+18|Carne de tubarão crua|20|1|Sustenance|Game_18.png|True
+19|Metal bruto|20|1|Materials|Game_19.png|True
+20|Prego|20|1|Resources|Game_20.png|True
+21|Tábua|20|1|Materials|Game_21.png|True
+22|Corda|20|1|Resources|Game_22.png|True
+23|Sucata|20|1|Materials|Game_23.png|True
+24|Alga|20|1|Materials|Game_24.png|True
+25|Folha de palmeira|20|1|Materials|Game_25.png|True
+26|Barril flutuante (interno)|1|1|Unclassified||False
+27|Item descartado (interno)|1|1|Unclassified||False
+31|Semente de palmeira|20|1|Miscellaneous|Game_31.png|True
+32|Machado de metal|1|120|Tools|Game_32.png|True
+33|Vara de pescar|1|10|Tools|Game_33.png|True
+34|Martelo de construção|1|1|Tools|Game_34.png|True
+35|Anzol de plástico|1|40|Tools|Game_35.png|True
+36|Anzol de sucata|1|100|Tools|Game_36.png|True
+37|Lança metálica|1|40|Weapons|Game_37.png|True
+38|Copo vazio|1|1|Food & Water|Game_38.png|True
+39|Copo de água potável|1|1|Liquid|Game_39.png|True
+40|Copo de água marinha|1|1|Liquid|Game_40.png|True
+42|Armazém|5|1|Other|Game_42.png|True
+43|Grelha simples|5|1|Food & Water|Game_43.png|True
+45|Plantação pequena|5|1|Food & Water|Game_45.png|True
+46|Plantação grande|5|1|Food & Water|Game_46.png|True
+47|Lanterna|5|1|Building|Game_47.png|True
+48|Mesa|5|1|Building|Game_48.png|True
+50|Pedra|20|1|Materials|Game_50.png|True
+51|Mexilhão gigante|20|1|Materials|Game_51.png|True
+52|Lança de madeira|1|20|Weapons|Game_52.png|True
+53|Plástico|20|1|Materials|Game_53.png|True
+54|Isca de tubarão|1|1|Tools|Game_54.png|True
+56|Âncora de lançar|5|1|Navigation|Game_56.png|True
+57|Âncora descartável|1|1|Navigation|Game_57.png|True
+59|Parede de palha|1|1|Building|Game_59.png|False
+63|Nadadeiras|1|600|Tools|Game_63.png|True
+64|Garrafa de oxigênio|1|600|Tools|Game_64.png|True
+65|Argila|20|1|Materials|Game_65.png|True
+66|Areia|20|1|Materials|Game_66.png|True
+67|Vidro|20|1|Materials|Game_67.png|True
+70|Barra de metal|20|1|Materials|Game_70.png|True
+71|Fundição|5|1|Other|Game_71.png|True
+72|Tijolo molhado|20|1|Resources|Game_72.png|True
+73|Tijolo seco|20|1|Materials|Game_73.png|True
+77|Grelha avançada|5|1|Food & Water|Game_77.png|True
+78|Filtro avançado|5|1|Food & Water|Game_78.png|True
+79|Garrafa vazia|1|1|Food & Water|Game_79.png|True
+80|Garrafa de água marinha|1|5|Liquid|Game_80.png|True
+81|Garrafa de água potável|1|5|Liquid|Game_81.png|True
+82|Janela de madeira|1|1|Building|Game_82.png|False
+83|Janela de palha|1|1|Building|Game_83.png|False
+84|Coluna de madeira|1|1|Building|Game_84.png|False
+85|Cerca de tábua|1|1|Building|Game_85.png|False
+86|Cerca de corda|1|1|Building|Game_86.png|False
+88|Porta de madeira|1|1|Building|Game_88.png|False
+89|Porta de palha|1|1|Building|Game_89.png|False
+91|Filtro simples|5|1|Food & Water|Game_91.png|True
+92|Rede|5|1|Other|Game_92.png|True
+93|Cama simples|5|1|Building|Game_93.png|True
+94|Objeto posicionável (interno)|0|1|Building|Game_94.png|False
+95|Pena|20|1|Materials|Game_95.png|True
+96|Lastro reforçado|1|1|Building|Game_96.png|False
+97|Ovo|20|1|Sustenance|Game_97.png|True
+98|Coxa de frango crua|20|1|Sustenance|Game_98.png|True
+99|Coxa de frango|20|1|Sustenance|Game_99.png|True
+100|Espantalho|5|1|Food & Water|Game_100.png|True
+101|Ninho de pássaro|5|1|Other|Game_101.png|True
+103|Remo|1|125|Navigation|Game_103.png|True
+104|Cor vermelha|600|1|Miscellaneous|Game_104.png|True
+105|Cor azul|600|1|Miscellaneous|Game_105.png|True
+106|Cor amarela|600|1|Miscellaneous|Game_106.png|True
+107|Cor branca|600|1|Miscellaneous|Game_107.png|True
+108|Cor preta|600|1|Miscellaneous|Game_108.png|True
+109|Pincel|1|1|Decorations|Game_109.png|True
+110|Pato mecânico de sucata|5|1|Miscellaneous|Game_110.png|True
+113|Mesa de pesquisa|5|1|Other|Game_113.png|True
+114|Flor preta|50|1|Miscellaneous|Game_114.png|True
+115|Flor vermelha|50|1|Miscellaneous|Game_115.png|True
+116|Flor amarela|50|1|Miscellaneous|Game_116.png|True
+117|Flor azul|50|1|Miscellaneous|Game_117.png|True
+118|Flor branca|50|1|Miscellaneous|Game_118.png|True
+119|Semente preta|20|1|Miscellaneous|Game_119.png|True
+120|Semente branca|20|1|Miscellaneous|Game_120.png|True
+121|Semente vermelha|20|1|Miscellaneous|Game_121.png|True
+122|Semente amarela|20|1|Miscellaneous|Game_122.png|True
+123|Semente azul|20|1|Miscellaneous|Game_123.png|True
+124|Moinho de tinta|5|1|Decorations|Game_124.png|True
+125|Gosma de videira|20|1|Materials|Game_125.png|True
+126|Vela|5|1|Navigation|Game_126.png|True
+127|Cabeça de tubarão|20|1|Equipment|Game_127.png|True
+128|Troféu tubarão|5|1|Equipment|Game_128.png|True
+129|Bagre cru|20|1|Sustenance|Game_129.png|True
+130|Salmão cru|20|1|Sustenance|Game_130.png|True
+131|Arenque cru|20|1|Sustenance|Game_131.png|True
+132|Palombeta cru|20|1|Sustenance|Game_132.png|True
+133|Salmão cozido|20|3|Sustenance|Game_133.png|True
+134|Palombeta cozido|20|1|Sustenance|Game_134.png|True
+135|Bagre cozido|20|3|Sustenance|Game_135.png|True
+136|Arenque cozido|20|1|Sustenance|Game_136.png|True
+137|Tilápia cozida|20|1|Sustenance|Game_137.png|True
+138|Tilápia crua|20|1|Sustenance|Game_138.png|True
+139|Sapato velho|5|1|Miscellaneous|Game_139.png|True
+140|Armazém pequeno|5|1|Other|Game_140.png|True
+142|Flâmula|5|1|Navigation|Game_142.png|True
+143|Piso levantado|1|1|Building|Game_143.png|False
+144|Meia-parede de madeira|1|1|Building|Game_144.png|False
+145|Meia-escada|1|1|Building|Game_145.png|False
+146|Meia-coluna de madeira|1|1|Building|Game_146.png|False
+147|Meia-parede de palha|1|1|Building|Game_147.png|False
+148|Teto de madeira|1|1|Building|Game_148.png|False
+149|Teto de palha|1|1|Building|Game_149.png|False
+150|Teto de madeira de canto|1|1|Building|Game_150.png|False
+151|Teto de palha de canto|1|1|Building|Game_151.png|False
+152|Parede de madeira triangular|1|1|Building|Game_152.png|False
+153|Parede triangular de palha|1|1|Building|Game_153.png|False
+154|Parafuso|20|1|Resources|Game_154.png|True
+155|Dobradiça|20|1|Resources|Game_155.png|True
+156|Gato sortudo|5|1|Decorations|Game_156.png|True
+157|Vela de garrafa|5|1|Building|Game_157.png|True
+158|Tapete|5|1|Building|Game_158.png|True
+159|Relógio|5|1|Building|Game_159.png|True
+160|Teto de madeira de canto invertido|1|1|Building|Game_160.png|False
+161|Teto de palha de canto invertido|1|1|Building|Game_161.png|False
+162|Plantação média|5|1|Food & Water|Game_162.png|True
+163|Melancia|20|2|Sustenance|Game_163.png|True
+164|Manga|20|1|Sustenance|Game_164.png|True
+165|Abacaxi|20|1|Sustenance|Game_165.png|True
+166|Semente de melancia|20|1|Miscellaneous|Game_166.png|True
+167|Semente de manga|20|1|Miscellaneous|Game_167.png|True
+168|Semente de abacaxi|20|1|Miscellaneous|Game_168.png|True
+169|Vara de pescar metálica|1|30|Tools|Game_169.png|True
+170|Binóculos|1|1|Tools|Game_170.png|True
+171|Calendário|5|1|Decorations|Game_171.png|True
+172|Placa|5|1|Decorations|Game_172.png|True
+173|Receptor|5|1|Navigation|Game_173.png|True
+175|Antena|5|1|Navigation|Game_175.png|True
+176|Bateria simples|1|50|Resources|Game_176.png|True
+177|Barra de cobre|20|1|Materials|Game_177.png|True
+178|Placa de circuito|20|1|Resources|Game_178.png|True
+179|Cobre|20|1|Materials|Game_179.png|True
+181|Diagrama: Receptor|1|1|Navigation|Game_181.png|True
+182|Diagrama: Antena|1|1|Blueprint|Game_182.png|True
+184|Escada|5|1|Building|Game_184.png|False
+185|Arco simples|1|60|Weapons|Game_185.png|True
+186|Flecha de pedra|30|1|Weapons|Game_186.png|True
+187|Estante|5|1|Building|Game_187.png|True
+188|Machado de pedra|1|50|Tools|Game_188.png|True
+189|Fundação triangular|1|1|Building|Game_189.png|False
+191|Piso triangular de madeira|1|1|Building|Game_191.png|False
+193|Piso triangular levantado|1|1|Building|Game_193.png|False
+194|Panela|5|1|Food & Water|Game_194.png|True
+195|Tábua grande de troféu|5|1|Decorations|Game_195.png|True
+196|Tábua média de troféu|5|1|Decorations|Game_196.png|True
+197|Tábua pequena de troféu|5|1|Decorations|Game_197.png|True
+198|Cogumelo de caverna|20|1|Sustenance|Game_198.png|True
+199|Pote de argila|20|1|Food & Water|Game_199.png|True
+200|Frutas vermelhas|20|1|Sustenance|Game_200.png|True
+201|Algas prateadas|20|1|Sustenance|Game_201.png|True
+202|Sopa de vegetais|5|1|Sustenance|Game_202.png|True
+203|Sobras|5|1|Sustenance|Game_203.png|True
+204|Receita: Sopa de vegetais|20|1|Cooking Pot Recipe|Game_204.png|True
+205|Cabeça de canoro|20|1|Equipment|Game_205.png|True
+206|Cabeça de baiacu venenoso|20|1|Equipment|Game_206.png|True
+207|Flecha metálica|30|1|Weapons|Game_207.png|True
+208|Ensopado simples de peixe|5|1|Sustenance|Game_208.png|True
+210|Galinha com coco|5|1|Sustenance|Game_210.png|True
+211|Bife com geleia|5|1|Sustenance|Game_211.png|True
+212|Caldo de cabeça|5|1|Food & Water|Game_212.png|True
+213|Omelete de cogumelo|5|1|Sustenance|Game_213.png|True
+215|Jantar de tubarão|5|1|Sustenance|Game_215.png|True
+216|Churrasco|5|1|Sustenance|Game_216.png|True
+217|Sushi|5|1|Sustenance|Game_217.png|True
+218|Receita: Ensopado simples de peixe|20|1|Cooking Pot Recipe|Game_218.png|True
+220|Receita: Galinha com coco|20|1|Cooking Pot Recipe|Game_220.png|True
+221|Receita: bife com geleia|20|1|Cooking Pot Recipe|Game_221.png|True
+222|Receita: Caldo de cabeça|20|1|Cooking Pot Recipe|Game_222.png|True
+223|Receita: Omelete de cogumelo|20|1|Cooking Pot Recipe|Game_223.png|True
+225|Receita: Jantar de tubarão|20|1|Cooking Pot Recipe|Game_225.png|True
+226|Receita: churrasco|20|1|Cooking Pot Recipe|Game_226.png|True
+227|Receita: sushi|20|1|Cooking Pot Recipe|Game_227.png|True
+228|Receita posicionável (interno)|0|1|Building|Game_228.png|False
+235|Capacete de piloto|5|1|Equipment|Game_235.png|True
+236|Sementes de grama|20|1|Unclassified|Game_236.png|True
+237|Plantação de grama|20|1|Food & Water|Game_237.png|True
+238|Pá|1|20|Tools|Game_238.png|True
+239|Terra|20|1|Resources|Game_239.png|True
+240|Balde|20|1|Food & Water|Game_240.png|True
+241|Balde de leite|1|1|Sustenance|Game_241.png|True
+242|Tosa|1|15|Tools|Game_242.png|True
+243|Lã|20|1|Materials|Game_243.png|True
+244|Lança-Redes|1|20|Weapons|Game_244.png|True
+245|Porta-Redes|20|1|Weapons|Game_245.png|True
+246|Couro|20|1|Materials|Game_246.png|True
+247|Gosma explosiva|20|1|Materials|Game_247.png|True
+248|Bálsamo de cura|20|1|Food & Water|Game_248.png|True
+249|Capacete de couro|1|20|Equipment|Game_249.png|True
+250|Armadura de couro|1|30|Equipment|Game_250.png|True
+251|Perneiras de couro|1|25|Equipment|Game_251.png|True
+252|Mochila|1|1|Equipment|Game_252.png|True
+253|Cabeça de javali|20|1|Equipment|Game_253.png|True
+254|Pó explosivo|20|1|Materials|Game_254.png|True
+255|Portão de madeira|1|1|Building|Game_255.png|False
+256|Portão de palha|1|1|Building|Game_256.png|False
+257|Identificação|1|1|Miscellaneous|Game_257.png|True
+259|Aspersor|5|1|Building|Game_259.png|True
+260|Lhama|20|1|Building|Game_260.png|True
+261|Galinha|20|1|Building|Game_261.png|True
+262|Cabra|20|1|Building|Game_262.png|True
+263|Rádio|5|1|Building|Game_263.png|True
+264|Chapéu de capitão|5|1|Unclassified|Game_264.png|True
+265|Motor|5|1|Building|Game_265.png|True
+268|Volante|5|1|Building|Game_268.png|True
+270|Diagrama: Lanterna|1|1|Blueprint|Game_270.png|True
+271|Lanterna|1|800|Equipment|Game_271.png|True
+272|Diagrama: Motor|1|1|Blueprint|Game_272.png|True
+273|Diagrama: Volante|1|1|Blueprint|Game_273.png|True
+274|Refinador de biocombustível|5|1|Building|Game_274.png|True
+275|Machete|1|40|Weapons|Game_275.png|True
+276|Mel|20|1|Resources|Game_276.png|True
+277|Tubo de combustível|20|1|Building|Game_277.png|True
+278|Tanque de biocombustível|20|1|Building|Game_278.png|True
+279|Diagrama: Machete|1|1|Blueprint|Game_279.png|True
+280|Diagrama: Tubo de combustível|1|1|Blueprint|Game_280.png|True
+281|Diagrama: Tanque de combustível|1|1|Blueprint|Game_281.png|True
+282|Diagrama: Refinador de combustível|1|1|Blueprint|Game_282.png|True
+283|Pinha|20|1|Miscellaneous|Game_283.png|True
+284|Semente de bétula|20|1|Miscellaneous|Game_284.png|True
+285|Cabeça de urso|20|1|Equipment|Game_285.png|True
+286|Biocombustível|20|1|Miscellaneous|Game_286.png|True
+287|Cabeça de mamãe-ursa|20|1|Equipment|Game_287.png|True
+288|Carne cozida|20|1|Sustenance|Game_288.png|True
+289|Carne crua|20|1|Sustenance|Game_289.png|True
+290|Colmeia de abelhas|5|1|Building|Game_290.png|True
+291|Rede de captura|1|35|Tools|Game_291.png|True
+292|Jarro de abelhas|20|1|Materials|Game_292.png|True
+293|Carregador de bateria|5|1|Building|Game_293.png|True
+294|Favo de mel|20|1|Materials|Game_294.png|True
+295|Bálsamo de cura|20|1|Food & Water|Game_295.png|True
+296|Armazém grande|5|1|Other|Game_296.png|True
+297|Diagrama: Armazém grande|1|1|Blueprint|Game_297.png|True
+298|Diagrama: Detector de metais|1|1|Blueprint|Game_298.png|True
+299|Diagrama: Carregador de bateria|1|1|Blueprint|Game_299.png|True
+300|Detector de metais|1|450|Tools|Game_300.png|True
+301|Minério de titânio|20|1|Materials|Game_301.png|True
+302|Major Tom|5|1|Building|Game_302.png|True
+306|Cabeça de canoro branco|20|1|Equipment|Game_306.png|True
+307|Lingote de titânio|20|1|Materials|Game_307.png|True
+308|Tirolesa|5|1|Building|Game_308.png|True
+309|Diagrama: Ferramenta de tirolesa|1|1|Blueprint|Game_309.png|True
+310|Fogos de artifício|50|1|Building|Game_310.png|True
+311|Ferramenta de tirolesa|1|175|Equipment|Game_311.png|True
+312|Peça Tiki|5|1|Building|Game_312.png|True
+313|Peça Tiki|5|1|Building|Game_313.png|True
+314|Peça Tiki|5|1|Building|Game_314.png|True
+315|Peça Tiki|5|1|Building|Game_315.png|True
+316|Totem Tiki|5|1|Building|Game_316.png|True
+317|Máscara Tiki|5|1|Unclassified|Game_317.png|True
+318|Robô de brinquedo|5|1|Building|Game_318.png|True
+319|Diagrama: Fogos de artifício|1|1|Blueprint|Game_319.png|True
+320|Developer hat|5|1|Unclassified|Game_320.png|True
+321|Chapéu de prefeito|5|1|Unclassified|Game_321.png|True
+322|Filtro elétrico|5|1|Building|Game_322.png|True
+323|Fita EDM|1|1|Unclassified|Game_323.png|True
+324|Fita pop|1|1|Unclassified|Game_324.png|True
+325|Fita rock|1|1|Unclassified|Game_325.png|True
+326|Fita clássica|1|1|Unclassified|Game_326.png|True
+327|Banana|20|1|Unclassified|Game_327.png|True
+328|Morango|20|1|Unclassified|Game_328.png|True
+329|Semente de morango|20|1|Miscellaneous|Game_329.png|True
+330|Semente de banana|20|1|Miscellaneous|Game_330.png|True
+331|Homem e Lua|5|1|Building|Game_331.png|True
+332|O Vaso|5|1|Building|Game_332.png|True
+333|Depois da Chuva|5|1|Building|Game_333.png|True
+334|Octohenge|5|1|Building|Game_334.png|True
+335|Cachorro do Vizinho|5|1|Building|Game_335.png|True
+336|Autorretrato Real|5|1|Building|Game_336.png|True
+337|O que É Isso?|5|1|Building|Game_337.png|True
+338|Neblinas Maléficas|5|1|Building|Game_338.png|True
+339|Diagrama: Tirolesa|1|1|Blueprint|Game_339.png|True
+340|Diagrama: Filtro elétrico|1|1|Blueprint|Game_340.png|True
+341|Tubo hídrico|20|1|Other|Game_341.png|True
+342|Tanque de água|20|1|Building|Game_342.png|True
+343|Diagrama: Tanque de água|1|1|Blueprint|Game_343.png|True
+344|Diagrama: Tubo hídrico|1|1|Blueprint|Game_344.png|True
+345|Piano|5|1|Building|Game_345.png|True
+346|Planta de Tangaroa|5|1|Building|Game_346.png|True
+347|Planta de Tangaroa|5|1|Building|Game_347.png|True
+348|Planta de Tangaroa|5|1|Building|Game_348.png|True
+349|Planta de Tangaroa|5|1|Building|Game_349.png|True
+350|Planta de Tangaroa|5|1|Building|Game_350.png|True
+351|Planta de Tangaroa|5|1|Building|Game_351.png|True
+352|Pintura de Tangaroa|5|1|Building|Game_352.png|True
+353|Pintura de Tangaroa|5|1|Building|Game_353.png|True
+354|Pintura de Tangaroa|5|1|Building|Game_354.png|True
+355|Pintura de Tangaroa|5|1|Building|Game_355.png|True
+356|Pintura de Tangaroa|5|1|Building|Game_356.png|True
+357|Fita de elevador|1|1|Unclassified|Game_357.png|True
+358|OP weapon|1|9999|Weapons|Game_358.png|True
+359|Robô de brinquedo dourado|5|1|Building|Game_359.png|True
+360|Bússola|1|1|Equipment|Game_360.png|True
+361|Turbina eólica|5|1|Building|Game_361.png|True
+362|Controles mecânicos|5|1|Building|Game_362.png|True
+363|Reciclador|5|1|Building|Game_363.png|True
+364|Cubo de lixo|20|1|Miscellaneous|Game_364.png|True
+365|Capacete de construção|5|1|Unclassified|Game_365.png|True
+366|Extrator de suco|5|1|Building|Game_366.png|True
+367|Copo para drinques|20|1|Food & Water|Game_367.png|True
+368|Cabeça de tamboril|20|1|Equipment|Game_368.png|True
+369|Troféu tubarão rinoceronte|20|1|Unclassified|Game_369.png|True
+371|Diagrama: Turbina de vento|1|1|Blueprint|Game_371.png|True
+372|Diagrama: Recicladora|1|1|Blueprint|Game_372.png|True
+373|Diagrama: Controles de motor|1|1|Blueprint|Game_373.png|True
+375|Projeto genérico (interno)|1|1|Blueprint|Game_375.png|False
+381|Cabeça de urso-polar|20|1|Equipment|Game_381.png|True
+382|Lastro sólido|1|1|Building|Game_382.png|False
+383|Lastro sólido triangular|1|1|Building|Game_383.png|False
+384|Piso sólido de madeira|1|1|Building|Game_384.png|False
+385|Piso sólido triangular de madeira|1|1|Building|Game_385.png|False
+386|Cerca sólida de madeira|1|1|Building|Game_386.png|False
+387|Lastro sólido triangular|1|1|Building|Game_387.png|False
+388|Piso sólido triangular de madeira|1|1|Building|Game_388.png|False
+389|Lata de lixo|5|1|Building|Game_389.png|True
+390|Pilha de livros|5|1|Building|Game_390.png|True
+391|Pena|5|1|Building|Game_391.png|True
+392|Pilha de livros|5|1|Building|Game_392.png|True
+393|Cadeira|5|1|Building|Game_393.png|True
+394|Mesa|5|1|Building|Game_394.png|True
+395|Sofá|5|1|Building|Game_395.png|True
+396|Piso sólido levantado|1|1|Building|Game_396.png|False
+397|Piso sólido triangular levantado|1|1|Building|Game_397.png|False
+398|Escada sólida de madeira|1|1|Building|Game_398.png|False
+399|Coluna sólida de madeira|1|1|Building|Game_399.png|False
+400|Meia-coluna sólida de madeira|1|1|Building|Game_400.png|False
+401|Teto sólido de madeira de canto|1|1|Building|Game_401.png|False
+402|Teto sólido de madeira de canto invertido|1|1|Building|Game_402.png|False
+403|Teto sólido de madeira|1|1|Building|Game_403.png|False
+404|Escada sólida|1|1|Building|Game_404.png|False
+405|Meia-escada sólida|1|1|Building|Game_405.png|False
+406|Porta sólida de madeira|1|1|Building|Game_406.png|False
+407|Portão sólido de madeira|1|1|Building|Game_407.png|False
+408|Parede sólida triangular de madeira|1|1|Building|Game_408.png|False
+409|Parede sólida de madeira|1|1|Building|Game_409.png|False
+410|Meia-parede sólida de madeira|1|1|Building|Game_410.png|False
+411|Janela sólida de madeira|1|1|Building|Game_411.png|False
+412|Talheres|5|1|Building|Game_412.png|True
+413|Castiçal|5|1|Building|Game_413.png|True
+414|Castiçal|5|1|Building|Game_414.png|True
+415|Caneca|5|1|Building|Game_415.png|True
+416|Mesa|5|1|Building|Game_416.png|True
+417|Mesa|5|1|Building|Game_417.png|True
+418|Cadeira|5|1|Building|Game_418.png|True
+419|Cadeira|5|1|Building|Game_419.png|True
+420|Mesa|5|1|Building|Game_420.png|True
+421|Parede piramidal de madeira|1|1|Building|Game_421.png|False
+422|Parede piramidal de palha|1|1|Building|Game_422.png|False
+423|Parede sólida piramidal de madeira|1|1|Building|Game_423.png|False
+424|Final de cumeeira de teto de madeira|1|1|Building|Game_424.png|False
+425|Final de cumeeira de teto de palha|1|1|Building|Game_425.png|False
+426|Final de cumeeira de teto sólido de madeira|1|1|Building|Game_426.png|False
+427|Teto piramidal de madeira|1|1|Building|Game_427.png|False
+428|Teto piramidal de palha|1|1|Building|Game_428.png|False
+429|Teto sólido piramidal de madeira|1|1|Building|Game_429.png|False
+430|Telhado de madeira duplo|1|1|Building|Game_430.png|False
+431|Telhado de palha duplo|1|1|Building|Game_431.png|False
+432|Telhado sólido de madeira duplo|1|1|Building|Game_432.png|False
+433|Globo terrestre|5|1|Building|Game_433.png|True
+434|Lanterna de metal|5|1|Building|Game_434.png|True
+435|Estante|5|1|Building|Game_435.png|True
+436|Estante|5|1|Building|Game_436.png|True
+437|Tapete|5|1|Building|Game_437.png|True
+438|Tapete|5|1|Building|Game_438.png|True
+439|Tapete|5|1|Building|Game_439.png|True
+440|Sofá|5|1|Building|Game_440.png|True
+441|Sofá|5|1|Building|Game_441.png|True
+442|Relógio|5|1|Building|Game_442.png|True
+443|Parede de madeira triangular|1|1|Building|Game_443.png|False
+444|Parede triangular de palha|1|1|Building|Game_444.png|False
+445|Parede sólida triangular de madeira|1|1|Building|Game_445.png|False
+446|Cortina|5|1|Building|Game_446.png|True
+447|Cortina|5|1|Building|Game_447.png|True
+448|Cama|5|1|Building|Game_448.png|True
+449|Rosa|5|1|Building|Game_449.png|True
+450|Girassol|5|1|Building|Game_450.png|True
+451|Costela-de-adão|5|1|Building|Game_451.png|True
+452|Hibisco|5|1|Building|Game_452.png|True
+453|Cacto|5|1|Building|Game_453.png|True
+454|Babosa|5|1|Building|Game_454.png|True
+455|Mesa|5|1|Building|Game_455.png|True
+456|Guarda-louça|5|1|Building|Game_456.png|True
+457|Guarda-louça|5|1|Building|Game_457.png|True
+458|Guarda-louça|5|1|Building|Game_458.png|True
+459|Mesa|5|1|Building|Game_459.png|True
+460|Estante|5|1|Building|Game_460.png|True
+461|Suporte para lenha|5|1|Building|Game_461.png|True
+462|Lareira|5|1|Building|Game_462.png|True
+463|Cesta de fogo|5|1|Building|Game_463.png|True
+465|Piso sólido triangular levantado|1|1|Building|Game_465.png|False
+466|Varal de luz|5|1|Building|Game_466.png|True
+467|Varal de luz|5|1|Building|Game_467.png|True
+468|Pacote decorativo|20|1|Unclassified|Game_468.png|True
+469|Pintura|5|1|Building|Game_469.png|True
+470|Pintura|5|1|Building|Game_470.png|True
+471|Pintura|5|1|Building|Game_471.png|True
+472|Pintura|5|1|Building|Game_472.png|True
+473|Banheira de madeira|5|1|Building|Game_473.png|True
+474|Banheiro externo|5|1|Building|Game_474.png|True
+475|Bandeira|5|1|Building|Game_475.png|True
+476|Bandeira|5|1|Building|Game_476.png|True
+477|Bandeira|5|1|Building|Game_477.png|True
+478|Bandeira|5|1|Building|Game_478.png|True
+479|Bandeira|5|1|Building|Game_479.png|True
+480|Bandeira|5|1|Building|Game_480.png|True
+481|Bandeira|5|1|Building|Game_481.png|True
+482|Pilha de papel|5|1|Building|Game_482.png|True
+483|Livro aberto|5|1|Building|Game_483.png|True
+484|Palavra motivacional|5|1|Building|Game_484.png|True
+485|Palavra motivacional|5|1|Building|Game_485.png|True
+486|Palavra motivacional|5|1|Building|Game_486.png|True
+487|Palavra motivacional|5|1|Building|Game_487.png|True
+488|Junção em T de madeira|1|1|Building|Game_488.png|False
+489|Junção em T de palha|1|1|Building|Game_489.png|False
+490|Junção em T sólida de madeira|1|1|Building|Game_490.png|False
+491|Meia-janela de madeira|1|1|Building|Game_491.png|False
+492|Meia-janela de palha|1|1|Building|Game_492.png|False
+493|Meia-janela sólida de madeira|1|1|Building|Game_493.png|False
+494|Meia-escada|1|1|Building|Game_494.png|False
+495|Meia-escada sólida|1|1|Building|Game_495.png|False
+496|Mesa|5|1|Building|Game_496.png|True
+497|Junção em X de madeira|1|1|Building|Game_497.png|False
+498|Junção em X de palha|1|1|Building|Game_498.png|False
+499|Junção em X sólida de madeira|1|1|Building|Game_499.png|False
+500|Junção em L sólida de madeira|1|1|Building|Game_500.png|False
+501|Junção em L de palha|1|1|Building|Game_501.png|False
+502|Junção em L de madeira|1|1|Building|Game_502.png|False
+503|Rede de coleta avançada|5|1|Other|Game_503.png|True
+504|Ensopado saudável|5|1|Sustenance|Game_504.png|True
+508|Suco de beterraba|5|1|Unclassified|Game_508.png|True
+509|Morango-abacaxi picante|5|1|Unclassified|Game_509.png|True
+510|Vitamina simples|5|1|Unclassified|Game_510.png|True
+511|Manganana|5|1|Unclassified|Game_511.png|True
+512|Melão vermelho|5|1|Unclassified|Game_512.png|True
+513|Vitamina-prata|5|1|Unclassified|Game_513.png|True
+514|Suco de coco|5|1|Unclassified|Game_514.png|True
+515|Colada de morango|5|1|Unclassified|Game_515.png|True
+516|Receita: ensopado saudável|20|1|Cooking Pot Recipe|Game_516.png|True
+520|Receita: morango-abacaxi picante|20|1|Unclassified|Game_520.png|True
+521|Receita: suco de beterraba|20|1|Unclassified|Game_521.png|True
+522|Receita: vitamina simples|20|1|Juicer Recipe|Game_522.png|True
+523|Receita: batida de coco|20|1|Juicer Recipe|Game_523.png|True
+524|Receita: colada de morango|20|1|Unclassified|Game_524.png|True
+525|Receita: manganana|20|1|Juicer Recipe|Game_525.png|True
+526|Receita: melão vermelho|20|1|Unclassified|Game_526.png|True
+527|Receita: vitamina prata|20|1|Unclassified|Game_527.png|True
+528|Junípero|20|1|Unclassified|Game_528.png|True
+529|Cúrcuma|20|1|Unclassified|Game_529.png|True
+530|Pimenta|20|1|Unclassified|Game_530.png|True
+531|Receita: salada de salmão|20|1|Cooking Pot Recipe|Game_531.png|True
+532|Receita: bagre de luxo|20|1|Cooking Pot Recipe|Game_532.png|True
+533|Salada de salmão|5|1|Sustenance|Game_533.png|True
+534|Bagre de luxo|5|1|Sustenance|Game_534.png|True
+535|Bateria avançada|1|175|Resources|Game_535.png|True
+536|Cabeça de hiena|20|1|Equipment|Game_536.png|True
+537|Cabeça de hiena alfa|20|1|Equipment|Game_537.png|True
+538|Âncora estacionária avançada|5|1|Building|Game_538.png|True
+539|Refinador de biocombustível avançado|5|1|Building|Game_539.png|True
+540|Fundição elétrica|5|1|Building|Game_540.png|True
+541|Coluna de madeira horizontal|1|1|Building|Game_541.png|False
+542|Meia-coluna de madeira horizontal|1|1|Building|Game_542.png|False
+543|Coluna sólida de madeira horizontal|1|1|Building|Game_543.png|False
+544|Meia-coluna sólida de madeira horizontal|1|1|Building|Game_544.png|False
+545|Tábua detalhada|20|1|Building|Game_545.png|True
+546|Substituir por madeira|1|1|Building|Game_546.png|False
+547|Substituir por palha|1|1|Building|Game_547.png|False
+548|Substituir por madeira sólida|1|1|Building|Game_548.png|False
+549|Ferramenta de tirolesa elétrica|1|350|Equipment|Game_549.png|True
+550|Sobras|5|1|Sustenance|Game_550.png|True
+551|Diagrama: âncora estacionária avançada|1|1|Unclassified|Game_551.png|True
+552|Diagrama: bateria avançada|1|1|Blueprint|Game_552.png|True
+553|Diagrama: fundição elétrica|1|1|Blueprint|Game_553.png|True
+554|Diagrama: refinador de biocombustível avançado|1|1|Unclassified|Game_554.png|True
+555|Diagrama: ferramenta de tirolesa elétrica|1|1|Unclassified|Game_555.png|True
+556|Diagrama: mochila grande|1|1|Blueprint|Game_556.png|True
+557|Flecha de titânio|30|1|Weapons|Game_557.png|True
+558|Espada de titânio|1|80|Weapons|Game_558.png|True
+559|Machado de titânio|1|240|Tools|Game_559.png|True
+560|Gancho de titânio|1|200|Tools|Game_560.png|True
+561|Diagrama: ferramentas de titânio|1|1|Blueprint|Game_561.png|True
+562|Mochila grande|1|1|Equipment|Game_562.png|True
+564|Moeda de troca|20|1|Miscellaneous|Game_564.png|True
+565|Espantalho avançado|5|1|Building|Game_565.png|True
+566|Jogo-da-velha|5|1|Building|Game_566.png|True
+567|Camarão-luz|20|1|Unclassified|Game_567.png|True
+568|Morde-rede|20|1|Unclassified|Game_568.png|True
+569|Carpontuda|20|1|Unclassified|Game_569.png|True
+570|Abocanhador|20|1|Unclassified|Game_570.png|True
+571|Cospe-espuma|20|1|Unclassified|Game_571.png|True
+572|Baiaiacu|20|1|Unclassified|Game_572.png|True
+573|Cincopontas|20|1|Unclassified|Game_573.png|True
+574|Peixe-leão|20|1|Unclassified|Game_574.png|True
+575|Peixe-lua|20|1|Unclassified|Game_575.png|True
+576|Papa-tubarão|20|1|Unclassified|Game_576.png|True
+577|Lagosta-arco-íris|20|1|Unclassified|Game_577.png|True
+578|Lúcio-rosa|20|1|Unclassified|Game_578.png|True
+579|Isca de pesca simples|40|1|Unclassified|Game_579.png|True
+580|Isca de pesca avançada|40|1|Unclassified|Game_580.png|True
+581|Isca de pesca especial|40|1|Unclassified|Game_581.png|True
+582|Contador de alicerces|5|1|Building|Game_582.png|True
+583|Corneta|5|1|Building|Game_583.png|True
+584|Buzina|5|1|Building|Game_584.png|True
+585|Corneta viking|5|1|Building|Game_585.png|True
+587|Ponte levadiça pequena|5|1|Building|Game_587.png|True
+588|Ponte levadiça grande|5|1|Building|Game_588.png|True
+589|Planta de Utopia|5|1|Building|Game_589.png|True
+590|Planta de Utopia|5|1|Building|Game_590.png|True
+591|Planta de Utopia|5|1|Building|Game_591.png|True
+592|Garrafa luminária de Utopia|5|1|Building|Game_592.png|True
+593|Garrafa luminária de Utopia|5|1|Building|Game_593.png|True
+594|Ervas de Utopia|5|1|Building|Game_594.png|True
+595|Ervas de Utopia|5|1|Building|Game_595.png|True
+596|Ervas de Utopia|5|1|Building|Game_596.png|True
+597|Ervas de Utopia|5|1|Building|Game_597.png|True
+598|Ervas de Utopia|5|1|Building|Game_598.png|True
+599|Ervas de Utopia|5|1|Building|Game_599.png|True
+600|Apanhador de sonhos de Utopia|5|1|Building|Game_600.png|True
+601|Decoração de Utopia|5|1|Building|Game_601.png|True
+602|Decoração de Utopia|5|1|Building|Game_602.png|True
+603|Decoração de Utopia|5|1|Building|Game_603.png|True
+604|Decoração de Utopia|5|1|Building|Game_604.png|True
+605|Decoração de Utopia|5|1|Building|Game_605.png|True
+606|Garrafas de Utopia|5|1|Building|Game_606.png|True
+607|Pintura de Temperance|5|1|Building|Game_607.png|True
+608|Pintura de Temperance|5|1|Building|Game_608.png|True
+609|Pintura de Temperance|5|1|Building|Game_609.png|True
+610|Planta de Temperance|5|1|Building|Game_610.png|True
+611|Planta de Temperance|5|1|Building|Game_611.png|True
+612|Planta de Temperance|5|1|Building|Game_612.png|True
+613|Tapete de Temperance|5|1|Building|Game_613.png|True
+614|Tapete de Temperance|5|1|Building|Game_614.png|True
+615|Talheres de Temperance|5|1|Building|Game_615.png|True
+616|Caneca de Temperance|5|1|Building|Game_616.png|True
+617|Lanterna de cabeça avançada|1|2000|Equipment|Game_617.png|True
+618|Diagrama: lanterna de cabeça avançada|1|1|Unclassified|Game_618.png|True
+619|Escada em espiral|5|1|Building|Game_619.png|True
+620|Meia-escada em espiral|5|1|Building|Game_620.png|True
+621|Chapéu de cozinheiro|5|1|Unclassified|Game_621.png|True
+622|Óculos de disfarce|5|1|Unclassified|Game_622.png|True
+623|Óculos de sol|5|1|Unclassified|Game_623.png|True
+624|Chapéu de marinheiro|5|1|Unclassified|Game_624.png|True
+625|Chapéu de pesca|5|1|Unclassified|Game_625.png|True
+626|Capacete de mergulho|5|1|Unclassified|Game_626.png|True
+627|Chapéu de pirata|5|1|Unclassified|Game_627.png|True
+628|Cantil vazio|1|1|Food & Water|Game_628.png|True
+629|Cantil de água salgada|1|10|Unclassified|Game_629.png|True
+630|Cantil de água potável|1|10|Unclassified|Game_630.png|True
+631|Guarda-roupa|5|1|Building|Game_631.png|True
+632|Diagrama: cantil|1|1|Blueprint|Game_632.png|True
+633|Diagrama: tábua detalhada|1|1|Blueprint|Game_633.png|True
+634|Plantação pequena avançada|5|1|Building|Game_634.png|True
+635|Plantação grande avançada|5|1|Building|Game_635.png|True
+636|Plantação média avançada|5|1|Building|Game_636.png|True
+637|Diagrama: plantação pequena avançada|1|1|Unclassified|Game_637.png|True
+638|Diagrama: plantação média avançada|1|1|Unclassified|Game_638.png|True
+639|Diagrama: plantação grande avançada|1|1|Unclassified|Game_639.png|True
+640|Geladeira|5|1|Building|Game_640.png|True
+641|Prancha de surfe|5|1|Building|Game_641.png|True
+642|Grelha elétrica|5|1|Building|Game_642.png|True
+643|Diagrama: grelha elétrica|1|1|Blueprint|Game_643.png|True
+644|Ferramentas de titânio|1|1|Unclassified|Game_644.png|False
+645|Fita do posto comercial|1|1|Unclassified|Game_645.png|True

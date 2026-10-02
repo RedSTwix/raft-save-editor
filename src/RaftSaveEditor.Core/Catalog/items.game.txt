@@ -1,0 +1,585 @@
+# ID|UniqueName|DisplayName|StackSize|MaxUses|SpriteFileId|SpritePathId|SourceFile|PathId
+1|Block_Floor_Wood||0|1|0|0|sharedassets0.assets|23286
+2|Block_Foundation||0|1|0|0|sharedassets0.assets|23292
+3|Block_Stair||0|1|0|0|sharedassets0.assets|23339
+4|Block_Wall_Wood||0|1|0|0|sharedassets0.assets|23369
+6|Placeable_Anchor_Stationary||0|1|0|0|sharedassets0.assets|23547
+7|Placeable_Chair_Basic||0|1|0|0|sharedassets0.assets|23566
+8|Placeable_CollectionNet_Basic||0|1|0|0|sharedassets0.assets|23573
+9|Repair||0|1|0|0|sharedassets0.assets|23371
+10|Coconut|Coconut|20|1|0|3321|sharedassets0.assets|23418
+11|Cooked_Beet|Cooked beet|20|1|0|3327|sharedassets0.assets|23419
+12|Cooked_Mackerel|Cooked mackerel|20|1|0|3308|sharedassets0.assets|23424
+13|Cooked_Potato|Cooked potato|20|1|0|3305|sharedassets0.assets|23426
+14|Cooked_Shark|Cooked shark|20|1|0|3320|sharedassets0.assets|23428
+15|Raw_Beet|Raw beet|20|1|0|3326|sharedassets0.assets|23452
+16|Raw_Mackerel|Raw mackerel|20|1|0|3307|sharedassets0.assets|23457
+17|Raw_Potato|Raw potato|20|1|0|3258|sharedassets0.assets|23459
+18|Raw_Shark|Raw sharkmeat|20|1|0|3319|sharedassets0.assets|23461
+19|MetalOre|Metal ore|20|1|0|3332|sharedassets0.assets|23506
+20|Nail|Nail|20|1|0|3328|sharedassets0.assets|23507
+21|Plank|Plank|20|1|0|3303|sharedassets0.assets|23508
+22|Rope|Rope|20|1|0|3313|sharedassets0.assets|23510
+23|Scrap|Scrap|20|1|0|3304|sharedassets0.assets|23512
+24|SeaVine|Seaweed|20|1|0|3338|sharedassets0.assets|23513
+25|Thatch|Palm Leaf|20|1|0|3311|sharedassets0.assets|23515
+26|Barrel||0|1|0|0|resources.assets|6569
+27|DropItem||0|1|0|0|resources.assets|6570
+31|Seed_Palm|Palm seed|20|1|0|3316|sharedassets0.assets|23788
+32|Axe|Metal axe|1|120|0|3315|sharedassets0.assets|23796
+33|FishingRod|Fishing rod|1|10|0|3306|sharedassets0.assets|23804
+34|Hammer|Building Hammer|1|1|0|3309|sharedassets0.assets|23806
+35|Hook_Plastic|Plastic hook|1|40|0|3334|sharedassets0.assets|23807
+36|Hook_Scrap|Scrap hook|1|100|0|3333|sharedassets0.assets|23808
+37|Spear_Scrap|Metal Spear|1|40|0|3314|sharedassets0.assets|23819
+38|PlasticCup_Empty|Tom kopp|1|1|0|3335|sharedassets0.assets|23449
+39|PlasticCup_Water|Cup of fresh water|1|1|0|3336|sharedassets0.assets|23451
+40|PlasticCup_SaltWater|Cup of saltwater|1|1|0|3337|sharedassets0.assets|23450
+42|Placeable_Storage_Medium||0|1|0|0|sharedassets0.assets|23693
+43|Placeable_CookingStand_Food_One||0|1|0|0|sharedassets0.assets|23576
+45|Placeable_Cropplot_Small||0|1|0|0|sharedassets0.assets|23588
+46|Placeable_Cropplot_Large||0|1|0|0|sharedassets0.assets|23583
+47|Placeable_Lantern_Basic||0|1|0|0|sharedassets0.assets|23627
+48|Placeable_Table_Basic||0|1|0|0|sharedassets0.assets|23699
+50|Stone|Stone|20|1|0|3331|sharedassets0.assets|23514
+51|Placeable_GiantClam|Giant clam|20|1|0|3342|sharedassets0.assets|23622
+52|Spear_Plank|Wooden spear|1|20|0|3339|sharedassets0.assets|23820
+53|Plastic|Plastic|20|1|0|3341|sharedassets0.assets|23509
+54|SharkBait|Shark bait|1|1|0|3340|sharedassets0.assets|23816
+56|Placeable_Anchor_Throwable||0|1|0|0|sharedassets0.assets|23549
+57|ThrowableAnchor||0|1|0|0|sharedassets0.assets|23823
+59|Block_Wall_Thatch||0|1|0|0|sharedassets0.assets|23356
+63|Flipper|Flippers|1|600|0|3344|sharedassets0.assets|23377
+64|OxygenBottle|Oxygen bottle|1|600|0|3349|sharedassets0.assets|23393
+65|Clay|Clay|20|1|0|3348|sharedassets0.assets|23473
+66|Sand|Sand|20|1|0|3351|sharedassets0.assets|23511
+67|Glass|Glass|20|1|0|3354|sharedassets0.assets|23490
+70|MetalIngot|Metal ingot|20|1|0|3353|sharedassets0.assets|23505
+71|Placeable_CookingStand_Smelter||0|1|0|0|sharedassets0.assets|23580
+72|Placeable_Brick_Wet||0|1|0|0|sharedassets0.assets|23561
+73|Brick_Dry|Dry brick|20|1|0|3345|sharedassets0.assets|23471
+77|Placeable_CookingStand_Food_Two||0|1|0|0|sharedassets0.assets|23577
+78|Placeable_CookingStand_Purifier_Two||0|1|0|0|sharedassets0.assets|23579
+79|PlasticBottle_Empty|Tom flaska|1|1|0|3383|sharedassets0.assets|23446
+80|PlasticBottle_SaltWater|Bottle of saltwater|1|5|0|3383|sharedassets0.assets|23447
+81|PlasticBottle_Water|Bottle of fresh water|1|5|0|3383|sharedassets0.assets|23448
+82|Block_Wall_Window_Wood||0|1|0|0|sharedassets0.assets|23367
+83|Block_Wall_Window_Thatch||0|1|0|0|sharedassets0.assets|23363
+84|Block_Pillar_Wood||0|1|0|0|sharedassets0.assets|23308
+85|Block_Wall_Fence_Plank||0|1|0|0|sharedassets0.assets|23344
+86|Block_Wall_Fence_Rope||0|1|0|0|sharedassets0.assets|23345
+88|Block_Wall_Door_Wood||0|1|0|0|sharedassets0.assets|23343
+89|Block_Wall_Door_Thatch||0|1|0|0|sharedassets0.assets|23341
+91|Placeable_CookingStand_Purifier_One||0|1|0|0|sharedassets0.assets|23578
+92|Placeable_Bed_Hammock||0|1|0|0|sharedassets0.assets|23553
+93|Placeable_Bed_Basic||0|1|0|0|sharedassets0.assets|23552
+94|Placeable||0|1|0|0|sharedassets0.assets|23546
+95|Feather|Feather|20|1|0|3359|sharedassets0.assets|23484
+96|Block_FoundationArmor||0|1|0|0|sharedassets0.assets|23287
+97|Egg|Egg|20|1|0|3360|sharedassets0.assets|23440
+98|Raw_Drumstick|Raw drumstick|20|1|0|3357|sharedassets0.assets|23454
+99|Cooked_Drumstick|Cooked drumstick|20|1|0|3358|sharedassets0.assets|23421
+100|Placeable_Scarecrow||0|1|0|0|sharedassets0.assets|23676
+101|Placeable_BirdsNest||0|1|0|0|sharedassets0.assets|23558
+103|Paddle|Paddle|1|125|0|3380|sharedassets0.assets|23814
+104|Color_Red|Red color|600|1|0|3364|sharedassets0.assets|23476
+105|Color_Blue|Blue color|600|1|0|3366|sharedassets0.assets|23475
+106|Color_Yellow|Yellow color|600|1|0|3365|sharedassets0.assets|23478
+107|Color_White|White color|600|1|0|3368|sharedassets0.assets|23477
+108|Color_Black|Black color|600|1|0|3367|sharedassets0.assets|23474
+109|PaintBrush|Paint brush|1|1|0|3379|sharedassets0.assets|23815
+110|Placeable_ScrapMechanic||0|1|0|0|sharedassets0.assets|23678
+113|Placeable_ResearchTable||0|1|0|0|sharedassets0.assets|23669
+114|Flower_Black|Black flower|50|1|0|3375|sharedassets0.assets|23485
+115|Flower_Red|Red flower|50|1|0|3377|sharedassets0.assets|23487
+116|Flower_Yellow|Yellow flower|50|1|0|3378|sharedassets0.assets|23489
+117|Flower_Blue|Blue flower|50|1|0|3376|sharedassets0.assets|23486
+118|Flower_White|White flower|50|1|0|3374|sharedassets0.assets|23488
+119|Seed_Flower_Black|Black seed|20|1|0|3373|sharedassets0.assets|23781
+120|Seed_Flower_White|White seed|20|1|0|3372|sharedassets0.assets|23784
+121|Seed_Flower_Red|Red seed|20|1|0|3369|sharedassets0.assets|23783
+122|Seed_Flower_Yellow|Yellow seed|20|1|0|3370|sharedassets0.assets|23785
+123|Seed_Flower_Blue|Blue seed|20|1|0|3371|sharedassets0.assets|23782
+124|Placeable_PaintMill||0|1|0|0|sharedassets0.assets|23642
+125|VineGoo|Vine goo|20|1|0|3384|sharedassets0.assets|23519
+126|Placeable_Sail||0|1|0|0|sharedassets0.assets|23675
+127|Head_Shark|Shark head|20|1|0|3386|sharedassets0.assets|23501
+128|Placeable_SharkTrophy||0|1|0|0|sharedassets0.assets|23679
+129|Raw_Catfish|Raw catfish|20|1|0|3392|sharedassets0.assets|23453
+130|Raw_Salmon|Raw salmon|20|1|0|3394|sharedassets0.assets|23460
+131|Raw_Herring|Raw herring|20|1|0|3398|sharedassets0.assets|23456
+132|Raw_Pomfret|Raw pomfret|20|1|0|3400|sharedassets0.assets|23458
+133|Cooked_Salmon|Cooked salmon|20|3|0|3395|sharedassets0.assets|23427
+134|Cooked_Pomfret|Cooked pomfret|20|1|0|3401|sharedassets0.assets|23425
+135|Cooked_Catfish|Cooked catfish|20|3|0|3393|sharedassets0.assets|23420
+136|Cooked_Herring|Cooked  herring|20|1|0|3399|sharedassets0.assets|23423
+137|Cooked_Tilapia|Cooked tilapia|20|1|0|3397|sharedassets0.assets|23429
+138|Raw_Tilapia|Raw tilapia|20|1|0|3396|sharedassets0.assets|23462
+139|Placeable_Cropplot_Shoe||0|1|0|0|sharedassets0.assets|23587
+140|Placeable_Storage_Small||0|1|0|0|sharedassets0.assets|23694
+142|Placeable_Streamer||0|1|0|0|sharedassets0.assets|23695
+143|Block_HalfFloor_Wood||0|1|0|0|sharedassets0.assets|23297
+144|Block_HalfWall_Wood||0|1|0|0|sharedassets0.assets|23370
+145|Block_HalfStair||0|1|0|0|sharedassets0.assets|23340
+146|Block_HalfPillar_Wood||0|1|0|0|sharedassets0.assets|23309
+147|Block_HalfWall_Thatch||0|1|0|0|sharedassets0.assets|23357
+148|Block_Roof_Straight_Wood||0|1|0|0|sharedassets0.assets|23333
+149|Block_Roof_Straight_Thatch||0|1|0|0|sharedassets0.assets|23315
+150|Block_Roof_Corner_Wood||0|1|0|0|sharedassets0.assets|23328
+151|Block_Roof_Corner_Thatch||0|1|0|0|sharedassets0.assets|23310
+152|Block_Wall_Slope_Wood||0|1|0|0|sharedassets0.assets|23354
+153|Block_Wall_Slope_Thatch||0|1|0|0|sharedassets0.assets|23350
+154|Bolt|Bolt|20|1|0|3403|sharedassets0.assets|23470
+155|Hinge|Hinge|20|1|0|3402|sharedassets0.assets|23502
+156|Placeable_LuckyCat||0|1|0|0|sharedassets0.assets|23631
+157|Placeable_GlassCandle||0|1|0|0|sharedassets0.assets|23564
+158|Placeable_Rug_Rectangle||0|1|0|0|sharedassets0.assets|23672
+159|Placeable_Clock_Basic||0|1|0|0|sharedassets0.assets|23570
+160|Block_Roof_InvCorner_Wood||0|1|0|0|sharedassets0.assets|23330
+161|Block_Roof_InvCorner_Thatch||0|1|0|0|sharedassets0.assets|23312
+162|Placeable_Cropplot_Medium||0|1|0|0|sharedassets0.assets|23585
+163|Watermelon|Watermelon|20|2|0|3414|sharedassets0.assets|23466
+164|Mango|Mango|20|1|0|3415|sharedassets0.assets|23444
+165|Pineapple|Pineapple|20|1|0|3416|sharedassets0.assets|23445
+166|Seed_Watermelon|Watermelon seed|20|1|0|3411|sharedassets0.assets|23792
+167|Seed_Mango|Mango seed|20|1|0|3412|sharedassets0.assets|23787
+168|Seed_Pineapple|Pineapple seed|20|1|0|3413|sharedassets0.assets|23790
+169|FishingRod_Metal|Metal fishing rod|1|30|0|3409|sharedassets0.assets|23805
+170|Binoculars|Binoculars|1|1|0|3408|sharedassets0.assets|23799
+171|Placeable_Calendar|Calendar|5|1|0|3417|sharedassets0.assets|23562
+172|Placeable_Sign|Sign|5|1|0|3418|sharedassets0.assets|23684
+173|Placeable_Reciever||0|1|0|0|sharedassets0.assets|23666
+175|Placeable_Reciever_Antenna||0|1|0|0|sharedassets0.assets|23667
+176|Battery|Simple Battery|1|50|0|3425|sharedassets0.assets|23467
+177|CopperIngot|Copper Ingot|20|1|0|3419|sharedassets0.assets|23479
+178|CircuitBoard|Circuit board|20|1|0|3421|sharedassets0.assets|23472
+179|CopperOre|Copper|20|1|0|3420|sharedassets0.assets|23480
+181|Blueprint_Reciever|Blueprint: Receiver|1|1|0|3424|sharedassets0.assets|23271
+182|Blueprint_Antenna|Blueprint: Antenna|1|1|0|3424|sharedassets0.assets|23248
+184|Block_Ladder||0|1|0|0|sharedassets0.assets|23302
+185|Bow|Basic bow|1|60|0|3427|sharedassets0.assets|23800
+186|Arrow_Stone|Stone arrow|30|1|0|3428|sharedassets0.assets|23794
+187|Placeable_Shelf_Small_Basic||0|1|0|0|sharedassets0.assets|23681
+188|Axe_Stone|Stone axe|1|50|0|3429|sharedassets0.assets|23797
+189|Block_Foundation_Triangular_Wood||0|1|0|0|sharedassets0.assets|23291
+191|Block_Floor_Triangular_Wood||0|1|0|0|sharedassets0.assets|23285
+193|Block_HalfFloor_Triangular_Wood||0|1|0|0|sharedassets0.assets|23296
+194|Placeable_CookingPot||0|1|0|0|sharedassets0.assets|23574
+195|Placeable_TrophyBoard_Large|Large trophy board|5|1|0|3433|sharedassets0.assets|23732
+196|Placeable_TrophyBoard_Medium|Medium trophy board|5|1|0|3432|sharedassets0.assets|23733
+197|Placeable_TrophyBoard_Small|Small trophy board|5|1|0|3431|sharedassets0.assets|23734
+198|CaveMushroom|Cave mushroom|20|1|0|3436|sharedassets0.assets|23402
+199|Claybowl_Empty|Clay bowl|20|1|0|3438|sharedassets0.assets|23412
+200|Berries_Red|Red berries|20|1|0|3435|sharedassets0.assets|23397
+201|SilverAlgae|Silver algae|20|1|0|3437|sharedassets0.assets|23463
+202|Claybowl_RootVegetableSoup|Vegetable soup|5|1|0|3443|sharedassets0.assets|23417
+203|Claybowl_Leftover|Leftovers|5|1|0|3441|sharedassets0.assets|23415
+204|Placeable_Recipe_VegetableSoup|Recipe: Vegetable soup|20|1|0|3452|sharedassets0.assets|23778
+205|Head_Screecher|Screecher head|20|1|0|3439|sharedassets0.assets|23499
+206|Head_PoisonPuffer|Poison-puffer head|20|1|0|3440|sharedassets0.assets|23497
+207|Arrow_Metal|Metal arrow|30|1|0|3434|sharedassets0.assets|23793
+208|Claybowl_SimpleFishStew|Simple fish stew|5|1|0|3442|sharedassets0.assets|23416
+210|Claybowl_CoconutChicken|Coconut chicken|5|1|0|3445|sharedassets0.assets|23411
+211|ClayPlate_SteakWithJam|Steak with jam|5|1|0|2932|sharedassets0.assets|23409
+212|Claybowl_HeadBroth|Head broth|5|1|0|3446|sharedassets0.assets|23413
+213|ClayPlate_MushroomOmelette|Mushroom omelette|5|1|0|3447|sharedassets0.assets|23406
+215|ClayPlate_SharkDinner|Shark dinner|5|1|0|3449|sharedassets0.assets|23408
+216|ClayPlate_BBQ|BBQ|5|1|0|2912|sharedassets0.assets|23404
+217|ClayPlate_Sushi|Sushi|5|1|0|2968|sharedassets0.assets|23410
+218|Placeable_Recipe_SimpleFishStew|Recipe: Simple fish stew|20|1|0|3451|sharedassets0.assets|23772
+220|Placeable_Recipe_CoconutChicken|Recipe: Coconut chicken|20|1|0|3454|sharedassets0.assets|23762
+221|Placeable_Recipe_SteakWithJam|Recipe: Steak with jam|20|1|0|2913|sharedassets0.assets|23775
+222|Placeable_Recipe_HeadBroth|Recipe: Head broth|20|1|0|3455|sharedassets0.assets|23763
+223|Placeable_Recipe_MushroomOmelette|Recipe: Mushroom omelette|20|1|0|3456|sharedassets0.assets|23766
+225|Placeable_Recipe_SharkDinner|Recipe: Shark dinner|20|1|0|3458|sharedassets0.assets|23770
+226|Placeable_Recipe_BBQ|Recipe: BBQ|20|1|0|3531|sharedassets0.assets|23759
+227|Placeable_Recipe_Sushi|Recipe: Sushi|20|1|0|3577|sharedassets0.assets|23777
+228|Placeable_Recipe||0|1|0|0|sharedassets0.assets|23758
+235|Hat_Pilot|Pilot helmet|5|1|0|3459|sharedassets0.assets|23387
+236|Seed_Grass||0|1|0|0|sharedassets0.assets|23786
+237|Placeable_Cropplot_Grass||0|1|0|0|sharedassets0.assets|23582
+238|Shovel|Shovel|1|20|0|3464|sharedassets0.assets|23818
+239|Dirt|Dirt|20|1|0|3471|sharedassets0.assets|23481
+240|Bucket|Bucket|20|1|0|3467|sharedassets0.assets|23801
+241|Bucket_Milk|Bucket of milk|1|1|0|3468|sharedassets0.assets|23398
+242|Shear|Shear|1|15|0|3465|sharedassets0.assets|23817
+243|Wool|Wool|20|1|0|3466|sharedassets0.assets|23520
+244|NetGun|Net launcher|1|20|0|3460|sharedassets0.assets|23813
+245|NetCanister|Net canister|20|1|0|3461|sharedassets0.assets|23812
+246|Leather|Leather|20|1|0|3469|sharedassets0.assets|23504
+247|ExplosiveGoo|Explosive goo|20|1|0|3462|sharedassets0.assets|23482
+248|HealingSalve|Healing salve|20|1|0|3475|sharedassets0.assets|23531
+249|Equipment_LeatherHelmet|Leather helmet|1|20|0|3476|sharedassets0.assets|23375
+250|Equipment_LeatherChest|Leather body armor|1|30|0|3474|sharedassets0.assets|23374
+251|Equipment_LeatherLegs|Leather greaves|1|25|0|3473|sharedassets0.assets|23376
+252|Backpack|Backpack|1|1|0|3472|sharedassets0.assets|23372
+253|Head_Boar|Warthog head|20|1|0|3470|sharedassets0.assets|23493
+254|ExplosivePowder|Explosive powder|20|1|0|3463|sharedassets0.assets|23483
+255|Block_Wall_Gate_Wood||0|1|0|0|sharedassets0.assets|23349
+256|Block_Wall_Gate_Thatch||0|1|0|0|sharedassets0.assets|23347
+257|Placeable_Nametag|Nametag|1|1|0|3478|sharedassets0.assets|23639
+259|Placeable_Sprinkler||0|1|0|0|sharedassets0.assets|23690
+260|Placeable_Figurine_Llama||0|1|0|0|sharedassets0.assets|23603
+261|Placeable_Figurine_Chicken||0|1|0|0|sharedassets0.assets|23601
+262|Placeable_Figurine_Goat||0|1|0|0|sharedassets0.assets|23602
+263|Placeable_Radio||0|1|0|0|sharedassets0.assets|23665
+264|Hat_Captain|Captain's hat|5|1|0|3484|sharedassets0.assets|23378
+265|Placeable_MotorWheel||0|1|0|0|sharedassets0.assets|23637
+268|Placeable_SteeringWheel||0|1|0|0|sharedassets0.assets|23691
+270|Blueprint_HeadLight|Blueprint: Headlight|1|1|0|3424|sharedassets0.assets|23264
+271|HeadLight|Head light|1|800|0|3486|sharedassets0.assets|23391
+272|Blueprint_MotorWheel|Blueprint: Engine|1|1|0|3424|sharedassets0.assets|23268
+273|Blueprint_SteeringWheel|Blueprint: Steering wheel|1|1|0|3424|sharedassets0.assets|23274
+274|Placeable_BiofuelExtractor||0|1|0|0|sharedassets0.assets|23556
+275|Machete|Machete|1|40|0|3489|sharedassets0.assets|23810
+276|Jar_Honey|Honey|20|1|0|3490|sharedassets0.assets|23442
+277|Placeable_Pipe_Fuel||0|1|0|0|sharedassets0.assets|23662
+278|Placeable_FuelTank||0|1|0|0|sharedassets0.assets|23621
+279|Blueprint_Machete|Blueprint: Machete|1|1|0|3424|sharedassets0.assets|23266
+280|Blueprint_Pipe_Fuel|Blueprint: Fuel pipe|1|1|0|3424|sharedassets0.assets|23269
+281|Blueprint_Fueltank|Blueprint: Fuel tank|1|1|0|3424|sharedassets0.assets|23263
+282|Blueprint_BiofuelExtractor|Blueprint: Biofuel refiner|1|1|0|3424|sharedassets0.assets|23252
+283|Seed_Pine|Pinecone|20|1|0|3494|sharedassets0.assets|23789
+284|Seed_Birch|Birch seed|20|1|0|3495|sharedassets0.assets|23780
+285|Head_Bear|Bear head|20|1|0|3496|sharedassets0.assets|23492
+286|BioFuel|Biofuel|20|1|0|3491|sharedassets0.assets|23469
+287|Head_MamaBear|Mama bear head|20|1|0|3497|sharedassets0.assets|23496
+288|Cooked_GenericMeat|Cooked meat|20|1|0|3499|sharedassets0.assets|23422
+289|Raw_GenericMeat|Raw meat|20|1|0|3498|sharedassets0.assets|23455
+290|Placeable_BeeHive||0|1|0|0|sharedassets0.assets|23555
+291|SweepNet|Sweep net|1|35|0|3501|sharedassets0.assets|23821
+292|Jar_Bee|Bee jar|20|1|0|3502|sharedassets0.assets|23503
+293|Placeable_BatteryCharger||0|1|0|0|sharedassets0.assets|23551
+294|HoneyComb|Honeycomb|20|1|0|3503|sharedassets0.assets|23441
+295|HealingSalve_Good|Good healing salve|20|1|0|3504|sharedassets0.assets|23532
+296|Placeable_Storage_Large||0|1|0|0|sharedassets0.assets|23692
+297|Blueprint_Storage_Large|Blueprint: Large storage|1|1|0|3424|sharedassets0.assets|23275
+298|Blueprint_MetalDetector|Blueprint: Metal detector|1|1|0|3424|sharedassets0.assets|23267
+299|Blueprint_BatteryCharger|Blueprint: Battery charger|1|1|0|3424|sharedassets0.assets|23251
+300|MetalDetector|Metal detector|1|450|0|3505|sharedassets0.assets|23811
+301|TitaniumOre|Titanium ore|20|1|0|3508|sharedassets0.assets|23517
+302|Placeable_MajorTom||0|1|0|0|sharedassets0.assets|23632
+306|Head_Screecher_Caravan|White screecher head|20|1|0|3511|sharedassets0.assets|23500
+307|TitaniumIngot|Titanium ingot|20|1|0|3507|sharedassets0.assets|23516
+308|Placeable_ZiplineBase||0|1|0|0|sharedassets0.assets|23757
+309|Blueprint_ZiplineTool|Blueprint: Zipline tool|1|1|0|3424|sharedassets0.assets|23280
+310|Placeable_Firework||0|1|0|0|sharedassets0.assets|23605
+311|ZiplineTool|Zipline tool|1|175|0|3512|sharedassets0.assets|23394
+312|Placeable_TikiPole_Feet||0|1|0|0|sharedassets0.assets|23725
+313|Placeable_TikiPole_Mid_1||0|1|0|0|sharedassets0.assets|23726
+314|Placeable_TikiPole_Mid_2||0|1|0|0|sharedassets0.assets|23727
+315|Placeable_TikiPole_Top||0|1|0|0|sharedassets0.assets|23728
+316|Placeable_TikiPole_Complete||0|1|0|0|sharedassets0.assets|23724
+317|Hat_Tiki|Tiki mask|5|1|0|3514|sharedassets0.assets|23390
+318|Placeable_ToyRobot||0|1|0|0|sharedassets0.assets|23729
+319|Blueprint_Firework|Blueprint: Firework|1|1|0|3424|sharedassets0.assets|23262
+320|Hat_Dev|Developer hat|5|1|0|2923|sharedassets0.assets|23381
+321|Hat_Mayor|Mayor hat|5|1|0|2939|sharedassets0.assets|23386
+322|Placeable_Electric_Purifier||0|1|0|0|sharedassets0.assets|23599
+323|Cassette_EDM|EDM cassette |1|1|0|2914|sharedassets0.assets|23522
+324|Cassette_Pop|Pop cassette|1|1|0|2969|sharedassets0.assets|23524
+325|Cassette_Rock|Rock cassette|1|1|0|3582|sharedassets0.assets|23525
+326|Cassette_Classical|Classical cassette|1|1|0|2942|sharedassets0.assets|23521
+327|Banana|Banana|20|1|0|2959|sharedassets0.assets|23396
+328|Strawberry|Strawberry|20|1|0|2943|sharedassets0.assets|23464
+329|Seed_Strawberry|Strawberry seed|20|1|0|2882|sharedassets0.assets|23791
+330|Seed_Banana|Banana seed|20|1|0|2896|sharedassets0.assets|23779
+331|Placeable_Painting_André||0|1|0|0|sharedassets0.assets|23643
+332|Placeable_Painting_Ellen||0|1|0|0|sharedassets0.assets|23648
+333|Placeable_Painting_Felicia||0|1|0|0|sharedassets0.assets|23649
+334|Placeable_Painting_Gabriel||0|1|0|0|sharedassets0.assets|23650
+335|Placeable_Painting_Illayda||0|1|0|0|sharedassets0.assets|23651
+336|Placeable_Painting_Petter||0|1|0|0|sharedassets0.assets|23652
+337|Placeable_Painting_Semih||0|1|0|0|sharedassets0.assets|23653
+338|Placeable_Painting_William||0|1|0|0|sharedassets0.assets|23659
+339|Blueprint_ZiplineBase|Blueprint: Zipline|1|1|0|3424|sharedassets0.assets|23279
+340|Blueprint_ElectricPurifier|Blueprint: Electric purifier|1|1|0|3424|sharedassets0.assets|23260
+341|Placeable_Pipe_Water||0|1|0|0|sharedassets0.assets|23663
+342|Placeable_WaterTank||0|1|0|0|sharedassets0.assets|23754
+343|Blueprint_WaterTank|Blueprint: Water tank|1|1|0|3424|sharedassets0.assets|23277
+344|Blueprint_Pipe_Water|Blueprint: Water pipe|1|1|0|3424|sharedassets0.assets|23270
+345|Placeable_Piano||0|1|0|0|sharedassets0.assets|23661
+346|Placeable_TangaroaPlant_1||0|1|0|0|sharedassets0.assets|23707
+347|Placeable_TangaroaPlant_2||0|1|0|0|sharedassets0.assets|23708
+348|Placeable_TangaroaPlant_3||0|1|0|0|sharedassets0.assets|23709
+349|Placeable_TangaroaPlant_4||0|1|0|0|sharedassets0.assets|23710
+350|Placeable_TangaroaPlant_5||0|1|0|0|sharedassets0.assets|23711
+351|Placeable_TangaroaPlant_6||0|1|0|0|sharedassets0.assets|23712
+352|Placeable_Painting_Tangaroa_1||0|1|0|0|sharedassets0.assets|23654
+353|Placeable_Painting_Tangaroa_2||0|1|0|0|sharedassets0.assets|23655
+354|Placeable_Painting_Tangaroa_3||0|1|0|0|sharedassets0.assets|23656
+355|Placeable_Painting_Tangaroa_4||0|1|0|0|sharedassets0.assets|23657
+356|Placeable_Painting_Tangaroa_5||0|1|0|0|sharedassets0.assets|23658
+357|Cassette_Elevator|Elevator cassette|1|1|0|3567|sharedassets0.assets|23523
+358|DevSpear|OP weapon|1|9999|0|2921|sharedassets0.assets|23803
+359|Placeable_ToyRobot_Golden||0|1|0|0|sharedassets0.assets|23730
+360|Compass|Compass|1|1|0|3587|sharedassets0.assets|23802
+361|Placeable_WindTurbine||0|1|0|0|sharedassets0.assets|23755
+362|Placeable_EngineControls||0|1|0|0|sharedassets0.assets|23600
+363|Placeable_Recycler||0|1|0|0|sharedassets0.assets|23668
+364|Trashcube|Trash cube|20|1|0|2961|sharedassets0.assets|23518
+365|Hat_Construction|Construction helmet|5|1|0|2911|sharedassets0.assets|23380
+366|Placeable_Juicer||0|1|0|0|sharedassets0.assets|23626
+367|DrinkingGlass|Drinking glass|20|1|0|2956|sharedassets0.assets|23430
+368|Head_AnglerFish|Anglerfish head|20|1|0|2931|sharedassets0.assets|23491
+369|Placeable_RhinoSharkTrophy|Rhino shark trophy|20|1|0|2879|sharedassets0.assets|23670
+371|Blueprint_WindTurbine|Blueprint: Wind turbine|1|1|0|3424|sharedassets0.assets|23278
+372|Blueprint_Recycler|Ritning: Återvinningsmaskin|1|1|0|3424|sharedassets0.assets|23272
+373|Blueprint_EngineControls|Ritning: Motorreglage|1|1|0|3424|sharedassets0.assets|23261
+375|Blueprint||0|1|0|0|sharedassets0.assets|23246
+381|Head_PolarBear|Polar bear head|20|1|0|3596|sharedassets0.assets|23498
+382|Block_Foundation_Tier3||0|1|0|0|sharedassets0.assets|23288
+383|Block_Foundation_Triangular_Tier3||0|1|0|0|sharedassets0.assets|23289
+384|Block_Floor_Tier3||0|1|0|0|sharedassets0.assets|23282
+385|Block_Floor_Triangular_Tier3||0|1|0|0|sharedassets0.assets|23283
+386|Block_Wall_Fence_Tier3||0|1|0|0|sharedassets0.assets|23346
+387|Block_Foundation_Triangular_Tier3_Mirrored||0|1|0|0|sharedassets0.assets|23290
+388|Block_Floor_Triangular_Tier3_Mirrored||0|1|0|0|sharedassets0.assets|23284
+389|Placeable_Trashcan||0|1|0|0|sharedassets0.assets|23731
+390|Placeable_Bookpile||0|1|0|0|sharedassets0.assets|23559
+391|Placeable_Quill||0|1|0|0|sharedassets0.assets|23664
+392|Placeable_Bookpile_Standing||0|1|0|0|sharedassets0.assets|23560
+393|Placeable_Chair_Wood||0|1|0|0|sharedassets0.assets|23569
+394|Placeable_Table_Square||0|1|0|0|sharedassets0.assets|23704
+395|Placeable_Sofa||0|1|0|0|sharedassets0.assets|23685
+396|Block_HalfFloor_Tier3||0|1|0|0|sharedassets0.assets|23293
+397|Block_HalfFloor_Triangular_Tier3||0|1|0|0|sharedassets0.assets|23294
+398|Block_Ladder_Tier3||0|1|0|0|sharedassets0.assets|23304
+399|Block_Pillar_Tier3||0|1|0|0|sharedassets0.assets|23306
+400|Block_Pillar_Tier3_Half||0|1|0|0|sharedassets0.assets|23307
+401|Block_Roof_Tier3_Corner||0|1|0|0|sharedassets0.assets|23319
+402|Block_Roof_Tier3_InvCorner||0|1|0|0|sharedassets0.assets|23321
+403|Block_Roof_Tier3_Straight||0|1|0|0|sharedassets0.assets|23324
+404|Block_Stair_Tier3||0|1|0|0|sharedassets0.assets|23337
+405|Block_Stair_Tier3_Half||0|1|0|0|sharedassets0.assets|23338
+406|Block_Wall_Door_Tier3||0|1|0|0|sharedassets0.assets|23342
+407|Block_Wall_Gate_Tier3||0|1|0|0|sharedassets0.assets|23348
+408|Block_Wall_Slope_Tier3||0|1|0|0|sharedassets0.assets|23352
+409|Block_Wall_Tier3||0|1|0|0|sharedassets0.assets|23358
+410|Block_Wall_Tier3_Half||0|1|0|0|sharedassets0.assets|23359
+411|Block_Wall_Window_Tier3||0|1|0|0|sharedassets0.assets|23365
+412|Placeable_Cutlery||0|1|0|0|sharedassets0.assets|23595
+413|Placeable_Candlestick||0|1|0|0|sharedassets0.assets|23565
+414|Placeable_Candelabra||0|1|0|0|sharedassets0.assets|23563
+415|Placeable_Mug||0|1|0|0|sharedassets0.assets|23638
+416|Placeable_Table_Square_Small||0|1|0|0|sharedassets0.assets|23705
+417|Placeable_Table_Round_Small||0|1|0|0|sharedassets0.assets|23701
+418|Placeable_Chair_Stool||0|1|0|0|sharedassets0.assets|23567
+419|Placeable_Chair_Stool_Small||0|1|0|0|sharedassets0.assets|23568
+420|Placeable_Table_Round||0|1|0|0|sharedassets0.assets|23700
+421|Block_Wall_VSlope_Wood||0|1|0|0|sharedassets0.assets|23362
+422|Block_Wall_VSlope_Thatch||0|1|0|0|sharedassets0.assets|23360
+423|Block_Wall_VSlope_Tier3||0|1|0|0|sharedassets0.assets|23361
+424|Block_Roof_Wood_EndCap||0|1|0|0|sharedassets0.assets|23329
+425|Block_Roof_Thatch_EndCap||0|1|0|0|sharedassets0.assets|23311
+426|Block_Roof_Tier3_EndCap||0|1|0|0|sharedassets0.assets|23320
+427|Block_Roof_Wood_Pyramid||0|1|0|0|sharedassets0.assets|23332
+428|Block_Roof_Thatch_Pyramid||0|1|0|0|sharedassets0.assets|23314
+429|Block_Roof_Tier3_Pyramid||0|1|0|0|sharedassets0.assets|23323
+430|Block_Roof_Wood_StraightV||0|1|0|0|sharedassets0.assets|23334
+431|Block_Roof_Thatch_StraightV||0|1|0|0|sharedassets0.assets|23316
+432|Block_Roof_Tier3_StraightV||0|1|0|0|sharedassets0.assets|23325
+433|Placeable_WorldGlobe||0|1|0|0|sharedassets0.assets|23756
+434|Placeable_Lantern_Metal||0|1|0|0|sharedassets0.assets|23630
+435|Placeable_Shelf_Large||0|1|0|0|sharedassets0.assets|23680
+436|Placeable_Shelf_Wood||0|1|0|0|sharedassets0.assets|23683
+437|Placeable_Rug_Round_Small||0|1|0|0|sharedassets0.assets|23674
+438|Placeable_Rug_Round_Large||0|1|0|0|sharedassets0.assets|23673
+439|Placeable_Rug_Door||0|1|0|0|sharedassets0.assets|23671
+440|Placeable_Sofa2Seat||0|1|0|0|sharedassets0.assets|23686
+441|Placeable_Sofa3Seat||0|1|0|0|sharedassets0.assets|23687
+442|Placeable_Clock_Fine||0|1|0|0|sharedassets0.assets|23571
+443|Block_Wall_Slope_Wood_Inverted||0|1|0|0|sharedassets0.assets|23355
+444|Block_Wall_Slope_Thatch_Inverted||0|1|0|0|sharedassets0.assets|23351
+445|Block_Wall_Slope_Tier3_Inverted||0|1|0|0|sharedassets0.assets|23353
+446|Placeable_Curtain_Vertical||0|1|0|0|sharedassets0.assets|23594
+447|Placeable_Curtain_Horizontal||0|1|0|0|sharedassets0.assets|23593
+448|Placeable_Bed_Wood||0|1|0|0|sharedassets0.assets|23554
+449|Placeable_Flower_Rose||0|1|0|0|sharedassets0.assets|23617
+450|Placeable_Flower_Sunflower||0|1|0|0|sharedassets0.assets|23618
+451|Placeable_Flower_Monstera||0|1|0|0|sharedassets0.assets|23616
+452|Placeable_Flower_Hibiscus||0|1|0|0|sharedassets0.assets|23615
+453|Placeable_Flower_Cactus||0|1|0|0|sharedassets0.assets|23614
+454|Placeable_Flower_AloeVera||0|1|0|0|sharedassets0.assets|23613
+455|Placeable_Table_Sofa_Square||0|1|0|0|sharedassets0.assets|23703
+456|Placeable_Cupboard_Small||0|1|0|0|sharedassets0.assets|23592
+457|Placeable_Cupboard_Medium||0|1|0|0|sharedassets0.assets|23591
+458|Placeable_Cupboard_Large||0|1|0|0|sharedassets0.assets|23590
+459|Placeable_Table_Sofa_Round||0|1|0|0|sharedassets0.assets|23702
+460|Placeable_Shelf_Small_Fine||0|1|0|0|sharedassets0.assets|23682
+461|Placeable_FirewoodRack||0|1|0|0|sharedassets0.assets|23604
+462|Placeable_Lantern_Fireplace||0|1|0|0|sharedassets0.assets|23629
+463|Placeable_Lantern_FireBasket||0|1|0|0|sharedassets0.assets|23628
+465|Block_HalfFloor_Triangular_Tier3_Mirrored||0|1|0|0|sharedassets0.assets|23295
+466|Placeable_StringLight_Horizontal||0|1|0|0|sharedassets0.assets|23696
+467|Placeable_StringLight_Vertical||0|1|0|0|sharedassets0.assets|23697
+468|Mystery_Package|Package|20|1|0|2946|sharedassets0.assets|23533
+469|Placeable_Painting_Crafted_1||0|1|0|0|sharedassets0.assets|23644
+470|Placeable_Painting_Crafted_2||0|1|0|0|sharedassets0.assets|23645
+471|Placeable_Painting_Crafted_3||0|1|0|0|sharedassets0.assets|23646
+472|Placeable_Painting_Crafted_4||0|1|0|0|sharedassets0.assets|23647
+473|Placeable_Bathtub||0|1|0|0|sharedassets0.assets|23550
+474|Placeable_Outhouse||0|1|0|0|sharedassets0.assets|23641
+475|Placeable_Flag_01||0|1|0|0|sharedassets0.assets|23606
+476|Placeable_Flag_02||0|1|0|0|sharedassets0.assets|23607
+477|Placeable_Flag_03||0|1|0|0|sharedassets0.assets|23608
+478|Placeable_Flag_04||0|1|0|0|sharedassets0.assets|23609
+479|Placeable_Flag_05||0|1|0|0|sharedassets0.assets|23610
+480|Placeable_Flag_06||0|1|0|0|sharedassets0.assets|23611
+481|Placeable_Flag_07||0|1|0|0|sharedassets0.assets|23612
+482|Placeable_PaperBundle||0|1|0|0|sharedassets0.assets|23660
+483|Placeable_OpenBook||0|1|0|0|sharedassets0.assets|23640
+484|Placeable_MotivationalSign_1||0|1|0|0|sharedassets0.assets|23633
+485|Placeable_MotivationalSign_2||0|1|0|0|sharedassets0.assets|23634
+486|Placeable_MotivationalSign_3||0|1|0|0|sharedassets0.assets|23635
+487|Placeable_MotivationalSign_4||0|1|0|0|sharedassets0.assets|23636
+488|Block_Roof_Wood_TJunction||0|1|0|0|sharedassets0.assets|23335
+489|Block_Roof_Thatch_TJunction||0|1|0|0|sharedassets0.assets|23317
+490|Block_Roof_Tier3_TJunction||0|1|0|0|sharedassets0.assets|23326
+491|Block_Wall_Window_Wood_Half||0|1|0|0|sharedassets0.assets|23368
+492|Block_Wall_Window_Thatch_Half||0|1|0|0|sharedassets0.assets|23364
+493|Block_Wall_Window_Tier3_Half||0|1|0|0|sharedassets0.assets|23366
+494|Block_Ladder_Half||0|1|0|0|sharedassets0.assets|23303
+495|Block_Ladder_Tier3_Half||0|1|0|0|sharedassets0.assets|23305
+496|Placeable_Table_Square_Tall||0|1|0|0|sharedassets0.assets|23706
+497|Block_Roof_Wood_XJunction||0|1|0|0|sharedassets0.assets|23336
+498|Block_Roof_Thatch_XJunction||0|1|0|0|sharedassets0.assets|23318
+499|Block_Roof_Tier3_XJunction||0|1|0|0|sharedassets0.assets|23327
+500|Block_Roof_Tier3_LJunction||0|1|0|0|sharedassets0.assets|23322
+501|Block_Roof_Thatch_LJunction||0|1|0|0|sharedassets0.assets|23313
+502|Block_Roof_Wood_LJunction||0|1|0|0|sharedassets0.assets|23331
+503|Placeable_CollectionNet_Advanced||0|1|0|0|sharedassets0.assets|23572
+504|Claybowl_HeartyStew|Hearty stew|5|1|0|3536|sharedassets0.assets|23414
+508|DrinkingGlass_RedbeetShot|Redbeet shot|5|1|0|3543|sharedassets0.assets|23435
+509|DrinkingGlass_SpicyPineberry|Spicy pineberry|5|1|0|3580|sharedassets0.assets|23438
+510|DrinkingGlass_SimpleSmoothie|Simple smoothie|5|1|0|2964|sharedassets0.assets|23437
+511|DrinkingGlass_Mangonana|Mangonana|5|1|0|2948|sharedassets0.assets|23433
+512|DrinkingGlass_RedMelon|Red melon|5|1|0|3559|sharedassets0.assets|23434
+513|DrinkingGlass_SilverSmoothie|Silver smoothie|5|1|0|2941|sharedassets0.assets|23436
+514|DrinkingGlass_CoconutBeat|Coconut beat|5|1|0|3619|sharedassets0.assets|23431
+515|DrinkingGlass_StrawberryColada|Strawberry colada|5|1|0|2917|sharedassets0.assets|23439
+516|Placeable_Recipe_HeartyStew|Recipe: Hearty stew|20|1|0|3529|sharedassets0.assets|23764
+520|Placeable_Recipe_SpicyPineberry|Recipe: Spicy pineberry|20|1|0|2915|sharedassets0.assets|23774
+521|Placeable_Recipe_RedbeetShot|Recipe: Redbeet shot|20|1|0|2996|sharedassets0.assets|23768
+522|Placeable_Recipe_SimpleSmoothie|Recipe: Simple smoothie|20|1|0|2974|sharedassets0.assets|23773
+523|Placeable_Recipe_CoconutBeat|Recipe: Banana milk|20|1|0|3574|sharedassets0.assets|23761
+524|Placeable_Recipe_StrawberryColada|Recipe: Strawberry colada|20|1|0|3566|sharedassets0.assets|23776
+525|Placeable_Recipe_Mangonana|Recipe: Mangonana|20|1|0|3547|sharedassets0.assets|23765
+526|Placeable_Recipe_RedMelon|Recipe: Red melon|20|1|0|3581|sharedassets0.assets|23767
+527|Placeable_Recipe_SilverSmoothie|Recipe: Silver smoothie|20|1|0|3598|sharedassets0.assets|23771
+528|Juniper|Juniper|20|1|0|2907|sharedassets0.assets|23443
+529|Turmeric|Turmeric|20|1|0|2885|sharedassets0.assets|23465
+530|Chili|Chili|20|1|0|2981|sharedassets0.assets|23403
+531|Placeable_Recipe_SalmonSalad|Recipe: Salmon salad|20|1|0|3457|sharedassets0.assets|23769
+532|Placeable_Recipe_CatfishDeluxe|Recipe: Catfish deluxe|20|1|0|3453|sharedassets0.assets|23760
+533|ClayPlate_SalmonSalad|Salmon salad|5|1|0|3448|sharedassets0.assets|23407
+534|ClayPlate_CatfishDeluxe|Catfish deluxe|5|1|0|3444|sharedassets0.assets|23405
+535|Battery_Advanced|Advanced Battery|1|175|0|3552|sharedassets0.assets|23468
+536|Head_Hyena|Hyena head|20|1|0|2985|sharedassets0.assets|23494
+537|Head_HyenaBoss|Alpha's head|20|1|0|3576|sharedassets0.assets|23495
+538|Placeable_Anchor_Stationary_Advanced||0|1|0|0|sharedassets0.assets|23548
+539|Placeable_BiofuelExtractor_Advanced||0|1|0|0|sharedassets0.assets|23557
+540|Placeable_CookingStand_Smelter_Electric||0|1|0|0|sharedassets0.assets|23581
+541|Block_HorizontalPillar_Wood||0|1|0|0|sharedassets0.assets|23300
+542|Block_HorizontalPillar_Wood_Half||0|1|0|0|sharedassets0.assets|23301
+543|Block_HorizontalPillar_Tier3||0|1|0|0|sharedassets0.assets|23298
+544|Block_HorizontalPillar_Tier3_Half||0|1|0|0|sharedassets0.assets|23299
+545|Placeable_DetailPlank||0|1|0|0|sharedassets0.assets|23596
+546|Block_Upgrade_Wood||0|1|0|0|resources.assets|6567
+547|Block_Upgrade_Thatch||0|1|0|0|resources.assets|6565
+548|Block_Upgrade_Tier3||0|1|0|0|resources.assets|6566
+549|ZiplineTool_Electric|Electric zipline tool|1|350|0|2898|sharedassets0.assets|23395
+550|DrinkingGlass_Leftover|Leftovers|5|1|0|2951|sharedassets0.assets|23432
+551|Blueprint_AnchorStationaryAdvanced|An item|1|1|0|3424|sharedassets0.assets|23247
+552|Blueprint_BatteryAdvanced|Blueprint: Advanced battery|1|1|0|3424|sharedassets0.assets|23250
+553|Blueprint_SmelterElectric|Blueprint: Electric smelter|1|1|0|3424|sharedassets0.assets|23273
+554|Blueprint_BiofuelExtractorAdvanced|An item|1|1|0|3424|sharedassets0.assets|23253
+555|Blueprint_ZiplineToolElectric|An item|1|1|0|3424|sharedassets0.assets|23281
+556|Blueprint_BackpackAdvanced|Blueprint: Big backpack|1|1|0|3424|sharedassets0.assets|23249
+557|Arrow_Titanium|Titanium arrow|30|1|0|3516|sharedassets0.assets|23795
+558|Sword_Titanium|Titanium sword|1|80|0|2920|sharedassets0.assets|23822
+559|Axe_Titanium|Titanium axe|1|240|0|3602|sharedassets0.assets|23798
+560|Hook_Titanium|Titanium hook|1|200|0|3513|sharedassets0.assets|23809
+561|Blueprint_TitaniumTools|Blueprint: Titanium tools|1|1|0|3424|sharedassets0.assets|23276
+562|Backpack_Advanced|Big backpack|1|1|0|3613|sharedassets0.assets|23373
+564|TradeToken|Trade coin|20|1|0|954|resources.assets|6568
+565|Placeable_Scarecrow_Advanced||0|1|0|0|sharedassets0.assets|23677
+566|Placeable_TicTacToe||0|1|0|0|sharedassets0.assets|23723
+567|TrophyFish_T1_Glow_Shrimp|Ljusräka|20|1|0|3607|sharedassets0.assets|23534
+568|TrophyFish_T1_NetNibbler|Nätmumsare|20|1|0|3562|sharedassets0.assets|23535
+569|TrophyFish_T1_SharpCarp|Skarp-Karp|20|1|0|2999|sharedassets0.assets|23536
+570|TrophyFish_T2_TrapSnapper|Snarbitare|20|1|0|2918|sharedassets0.assets|23539
+571|TrophyFish_T2_Foamspitter|Skumspottare|20|1|0|3621|sharedassets0.assets|23537
+572|TrophyFish_T2_Pufferlisk|Pufferlisk|20|1|0|3545|sharedassets0.assets|23538
+573|TrophyFish_T3_Pentapus|Femarmad Bläckfisk|20|1|0|2957|sharedassets0.assets|23542
+574|TrophyFish_T3_Lionfish|Lejonfisk|20|1|0|3588|sharedassets0.assets|23540
+575|TrophyFish_T3_Lunarfish|Månfisk|20|1|0|3606|sharedassets0.assets|23541
+576|TrophyFish_T3_Sharkeater|Hajätare|20|1|0|2933|sharedassets0.assets|23545
+577|TrophyFish_T3_RainbowLobster|Regnbågshummer|20|1|0|3586|sharedassets0.assets|23544
+578|TrophyFish_T3_PinkPike|Rosa Gädda|20|1|0|2972|sharedassets0.assets|23543
+579|FishingBait_Simple|Enkelt fiskbete|40|1|0|2990|sharedassets0.assets|23530
+580|FishingBait_Advanced|Avancerat fiskbete|40|1|0|3590|sharedassets0.assets|23528
+581|FishingBait_Expert|Professionellt fiskbete|40|1|0|2906|sharedassets0.assets|23529
+582|Placeable_FoundationCounter||0|1|0|0|sharedassets0.assets|23619
+583|Placeable_HonkHorn_1||0|1|0|0|sharedassets0.assets|23623
+584|Placeable_HonkHorn_2||0|1|0|0|sharedassets0.assets|23624
+585|Placeable_HonkHorn_3||0|1|0|0|sharedassets0.assets|23625
+587|Placeable_DrawBridgeShort||0|1|0|0|sharedassets0.assets|23598
+588|Placeable_DrawBridgeLong||0|1|0|0|sharedassets0.assets|23597
+589|Placeable_Utopia_Plant_1||0|1|0|0|sharedassets0.assets|23750
+590|Placeable_Utopia_Plant_2||0|1|0|0|sharedassets0.assets|23751
+591|Placeable_Utopia_Plant_3||0|1|0|0|sharedassets0.assets|23752
+592|Placeable_Utopia_LightBottleWhite||0|1|0|0|sharedassets0.assets|23748
+593|Placeable_Utopia_LightBottleYellow||0|1|0|0|sharedassets0.assets|23749
+594|Placeable_Utopia_Herb_1||0|1|0|0|sharedassets0.assets|23742
+595|Placeable_Utopia_Herb_2||0|1|0|0|sharedassets0.assets|23743
+596|Placeable_Utopia_Herb_3||0|1|0|0|sharedassets0.assets|23744
+597|Placeable_Utopia_Herb_4||0|1|0|0|sharedassets0.assets|23745
+598|Placeable_Utopia_Herb_5||0|1|0|0|sharedassets0.assets|23746
+599|Placeable_Utopia_Herb_6||0|1|0|0|sharedassets0.assets|23747
+600|Placeable_Utopia_DanglyDecoration_1||0|1|0|0|sharedassets0.assets|23736
+601|Placeable_Utopia_DanglyDecoration_2||0|1|0|0|sharedassets0.assets|23737
+602|Placeable_Utopia_DanglyDecoration_3||0|1|0|0|sharedassets0.assets|23738
+603|Placeable_Utopia_DanglyDecoration_4||0|1|0|0|sharedassets0.assets|23739
+604|Placeable_Utopia_DanglyDecoration_5||0|1|0|0|sharedassets0.assets|23740
+605|Placeable_Utopia_DanglyDecoration_6||0|1|0|0|sharedassets0.assets|23741
+606|Placeable_Utopia_Bottle||0|1|0|0|sharedassets0.assets|23735
+607|Placeable_Temperance_Painting_1||0|1|0|0|sharedassets0.assets|23715
+608|Placeable_Temperance_Painting_2||0|1|0|0|sharedassets0.assets|23716
+609|Placeable_Temperance_Painting_3||0|1|0|0|sharedassets0.assets|23717
+610|Placeable_Temperance_Plant_1||0|1|0|0|sharedassets0.assets|23718
+611|Placeable_Temperance_Plant_2||0|1|0|0|sharedassets0.assets|23719
+612|Placeable_Temperance_Plant_3||0|1|0|0|sharedassets0.assets|23720
+613|Placeable_Temperance_Rug_1||0|1|0|0|sharedassets0.assets|23721
+614|Placeable_Temperance_Rug_2||0|1|0|0|sharedassets0.assets|23722
+615|Placeable_Temperance_Cutlery||0|1|0|0|sharedassets0.assets|23713
+616|Placeable_Temperance_Mug||0|1|0|0|sharedassets0.assets|23714
+617|HeadLight_Advanced|Advanced head light|1|2000|0|3546|sharedassets0.assets|23392
+618|Blueprint_HeadLight_Advanced|An item|1|1|0|3424|sharedassets0.assets|23265
+619|Placeable_SpiralStair||0|1|0|0|sharedassets0.assets|23688
+620|Placeable_SpiralStair_Half||0|1|0|0|sharedassets0.assets|23689
+621|Hat_Chef|Chef's hat|5|1|0|3618|sharedassets0.assets|23379
+622|Hat_Glasses_Disguise|Disguise glasses|5|1|0|3534|sharedassets0.assets|23385
+623|Hat_Glasses_Aviator|Sunglasses|5|1|0|2986|sharedassets0.assets|23384
+624|Hat_Sailor|Sailor hat|5|1|0|3541|sharedassets0.assets|23389
+625|Hat_Fishing|Fishing hat|5|1|0|2973|sharedassets0.assets|23383
+626|Hat_Diving|Diving helmet|5|1|0|2947|sharedassets0.assets|23382
+627|Hat_Pirate|Pirate hat|5|1|0|2953|sharedassets0.assets|23388
+628|Canteen_Empty|Empty canteen|1|1|0|3548|sharedassets0.assets|23399
+629|Canteen_SaltWater|Canteen of salt water|1|10|0|3548|sharedassets0.assets|23400
+630|Canteen_Water|Canteen of fresh water|1|10|0|3548|sharedassets0.assets|23401
+631|Placeable_Wardrobe||0|1|0|0|sharedassets0.assets|23753
+632|Blueprint_Canteen|An item|1|1|0|3424|sharedassets0.assets|23254
+633|Blueprint_DetailPlank|An item|1|1|0|3424|sharedassets0.assets|23258
+634|Placeable_Cropplot_Small_Tier3||0|1|0|0|sharedassets0.assets|23589
+635|Placeable_Cropplot_Large_Tier3||0|1|0|0|sharedassets0.assets|23584
+636|Placeable_Cropplot_Medium_Tier3||0|1|0|0|sharedassets0.assets|23586
+637|Blueprint_Cropplot_Small_Tier3|An item|1|1|0|3424|sharedassets0.assets|23257
+638|Blueprint_Cropplot_Medium_Tier3|An item|1|1|0|3424|sharedassets0.assets|23256
+639|Blueprint_Cropplot_Large_Tier3|An item|1|1|0|3424|sharedassets0.assets|23255
+640|Placeable_Fridge||0|1|0|0|sharedassets0.assets|23620
+641|Placeable_Surfboard||0|1|0|0|sharedassets0.assets|23698
+642|Placeable_CookingStand_Food_Electric||0|1|0|0|sharedassets0.assets|23575
+643|Blueprint_ElectricGrill|An item|1|1|0|3424|sharedassets0.assets|23259
+644|FakeTitaniumTools|An item|1|1|0|3310|sharedassets0.assets|23527
+645|Cassette_TradingPost||1|1|0|3565|sharedassets0.assets|23526

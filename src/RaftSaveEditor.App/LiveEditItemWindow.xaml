@@ -1,0 +1,55 @@
+<Window x:Class="RaftSaveEditor.App.LiveEditItemWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Editar item ao vivo" Width="560" Height="610" ResizeMode="NoResize"
+        WindowStartupLocation="CenterOwner" ShowInTaskbar="False">
+    <Grid Margin="26">
+        <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+        <StackPanel>
+            <TextBlock Text="Editar item ao vivo" FontSize="26" FontWeight="SemiBold"/>
+            <TextBlock Text="A alteração é aplicada imediatamente no jogo e salva." Foreground="{StaticResource AccentBrush}" Margin="0,5,0,0"/>
+        </StackPanel>
+        <Grid Grid.Row="1" Margin="0,16,0,0">
+            <Grid.ColumnDefinitions><ColumnDefinition Width="58"/><ColumnDefinition/></Grid.ColumnDefinitions>
+            <Border Width="48" Height="48" Background="#101A28" CornerRadius="8" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1">
+                <Image x:Name="ItemIcon" Width="40" Height="40" Stretch="Uniform"/>
+            </Border>
+            <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                <TextBlock x:Name="ItemNameText" FontSize="18" FontWeight="SemiBold"/>
+                <TextBlock x:Name="ItemIdText" Foreground="{StaticResource MutedBrush}" Margin="0,3,0,0"/>
+            </StackPanel>
+        </Grid>
+        <StackPanel Grid.Row="2" Margin="0,20,0,0">
+            <TextBlock Text="Item — pesquise pelo nome ou escolha na lista" Foreground="{StaticResource MutedBrush}" Margin="0,0,0,6"/>
+            <ComboBox x:Name="ItemComboBox" FontSize="16" IsEditable="True" IsTextSearchEnabled="True"
+                      TextSearch.TextPath="SearchLabel" StaysOpenOnEdit="True" MaxDropDownHeight="300"
+                      SelectionChanged="ItemComboBox_SelectionChanged">
+                <ComboBox.ItemTemplate><DataTemplate>
+                    <Grid MinWidth="440" Margin="2,3">
+                        <Grid.ColumnDefinitions><ColumnDefinition Width="36"/><ColumnDefinition/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+                        <Image Source="{Binding IconPath}" Width="28" Height="28" Stretch="Uniform"/>
+                        <TextBlock Grid.Column="1" Text="{Binding Name}" VerticalAlignment="Center" Margin="6,0,0,0"/>
+                        <TextBlock Grid.Column="2" Text="{Binding Id, StringFormat=ID {0}}" Foreground="#52647B" VerticalAlignment="Center" Margin="14,0,4,0"/>
+                    </Grid>
+                </DataTemplate></ComboBox.ItemTemplate>
+            </ComboBox>
+        </StackPanel>
+        <Grid Grid.Row="3" Margin="0,16,0,0">
+            <Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition/><ColumnDefinition/></Grid.ColumnDefinitions>
+            <StackPanel Margin="0,0,7,0"><TextBlock Text="Quantidade" Foreground="{StaticResource MutedBrush}" Margin="0,0,0,6"/><TextBox x:Name="AmountTextBox" FontSize="18"/></StackPanel>
+            <StackPanel Grid.Column="1" Margin="7,0"><TextBlock Text="Uses" Foreground="{StaticResource MutedBrush}" Margin="0,0,0,6"/><TextBox x:Name="UsesTextBox" FontSize="18"/></StackPanel>
+            <StackPanel Grid.Column="2" Margin="7,0,0,0"><TextBlock Text="Índice real" Foreground="{StaticResource MutedBrush}" Margin="0,0,0,6"/><TextBox x:Name="SlotTextBox" FontSize="18"/></StackPanel>
+        </Grid>
+        <Border Grid.Row="4" Background="#101A28" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="8" Padding="12" Margin="0,18,0,0">
+            <Grid><Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition/></Grid.ColumnDefinitions>
+                <StackPanel><TextBlock Text="Local" Foreground="{StaticResource MutedBrush}"/><TextBlock x:Name="LocationText" Margin="0,4,0,0" FontWeight="SemiBold"/></StackPanel>
+                <StackPanel Grid.Column="1"><TextBlock x:Name="TypeText" HorizontalAlignment="Right" FontWeight="SemiBold"/><TextBlock x:Name="LimitsText" HorizontalAlignment="Right" Foreground="{StaticResource AccentBrush}" Margin="0,4,0,0"/></StackPanel>
+            </Grid>
+        </Border>
+        <TextBlock x:Name="ValidationText" Grid.Row="5" Foreground="#FF7B72" Margin="0,12,0,0" TextWrapping="Wrap"/>
+        <Grid Grid.Row="6">
+            <Button Content="Excluir item" Style="{StaticResource DangerButton}" HorizontalAlignment="Left" Click="Delete_Click"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right"><Button Content="Cancelar" IsCancel="True" Margin="0,0,8,0"/><Button Content="Aplicar agora" Style="{StaticResource PrimaryButton}" IsDefault="True" Click="Apply_Click"/></StackPanel>
+        </Grid>
+    </Grid>
+</Window>

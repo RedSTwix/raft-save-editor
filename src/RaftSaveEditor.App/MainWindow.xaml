@@ -1,0 +1,357 @@
+<Window x:Class="RaftSaveEditor.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" Title="Raft Save Editor 1.0" Icon="/Assets/Items/Steering_Wheel.png" Width="1260" Height="780" MinWidth="980" MinHeight="640"
+        WindowStartupLocation="CenterScreen" AllowDrop="True" Drop="Window_Drop" DragOver="Window_DragOver">
+    <Grid>
+        <Grid Visibility="{Binding IsWelcome, Converter={StaticResource BoolToVisibility}}">
+            <Border Width="620" Padding="48" Background="{StaticResource PanelBrush}" BorderBrush="{StaticResource BorderBrush}"
+                    BorderThickness="1" CornerRadius="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel>
+                    <Border Width="62" Height="62" CornerRadius="18" Background="{StaticResource AccentDarkBrush}" HorizontalAlignment="Center">
+                        <TextBlock Text="R" FontSize="30" FontWeight="Bold" Foreground="{StaticResource AccentBrush}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <TextBlock Text="Raft Save Editor" FontSize="34" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,22,0,8"/>
+                    <TextBlock Text="Edite itens e quantidades dos seus saves do Raft." Foreground="{StaticResource MutedBrush}" FontSize="16" HorizontalAlignment="Center"/>
+                    <WrapPanel HorizontalAlignment="Center" Margin="0,34,0,18">
+                        <Button Content="Detectar saves" Style="{StaticResource PrimaryButton}" Command="{Binding OpenCommand}" MinWidth="180" Margin="0,0,10,0"/>
+                        <Button Content="Detectar jogo aberto" Click="DetectGameButton_Click" MinWidth="190"/>
+                    </WrapPanel>
+                    <Border BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="12" Padding="20" Background="#0D1521">
+                        <StackPanel>
+                            <TextBlock Text="Os saves instalados serão encontrados automaticamente" HorizontalAlignment="Center" FontWeight="SemiBold"/>
+                            <TextBlock Text="Você também pode arrastar um arquivo .rgd para esta janela" Foreground="{StaticResource MutedBrush}" HorizontalAlignment="Center" Margin="0,5,0,0"/>
+                        </StackPanel>
+                    </Border>
+                    <TextBlock Text="O arquivo só é alterado após sua confirmação."
+                               Foreground="{StaticResource MutedBrush}" FontSize="12" TextAlignment="Center" Margin="0,20,0,0"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <Grid Visibility="{Binding IsLoaded, Converter={StaticResource BoolToVisibility}}">
+            <Grid.RowDefinitions><RowDefinition Height="76"/><RowDefinition Height="*"/><RowDefinition Height="42"/></Grid.RowDefinitions>
+            <Grid.ColumnDefinitions><ColumnDefinition Width="220"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+
+            <Border Grid.Row="0" Grid.ColumnSpan="2" Background="#0E1622" BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,0,0,1">
+                <Grid Margin="22,0">
+                    <Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <Border Width="42" Height="42" CornerRadius="11" Background="{StaticResource AccentDarkBrush}">
+                            <TextBlock Text="R" FontSize="20" FontWeight="Bold" Foreground="{StaticResource AccentBrush}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <StackPanel Margin="12,0,0,0" VerticalAlignment="Center">
+                            <TextBlock Text="Raft Save Editor" FontSize="18" FontWeight="SemiBold"/>
+                            <TextBlock Text="Edição NRBF validada" Foreground="{StaticResource MutedBrush}" FontSize="12"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                        <Border Background="#2B2415" CornerRadius="8" Padding="12,8" Margin="0,0,10,0">
+                            <TextBlock Text="{Binding PendingText}" Foreground="{StaticResource WarningBrush}"/>
+                        </Border>
+                        <Button Content="Abrir outro save" Command="{Binding OpenCommand}" Margin="0,0,8,0"/>
+                        <Button Content="Recarregar" Command="{Binding ReloadCommand}" Margin="0,0,8,0"/>
+                        <Button Content="Exportar cópia" Command="{Binding ExportSaveCopyCommand}" Margin="0,0,8,0" ToolTip="Cria uma cópia manual em ZIP. Não há backup automático."/>
+                        <Button Content="Salvar alterações" Style="{StaticResource PrimaryButton}" Command="{Binding SaveCommand}"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="1" Grid.Column="0" Background="#0E1622" BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,0,1,0">
+                <Grid Margin="14,20">
+                    <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+                    <TextBlock Text="NAVEGAÇÃO" Foreground="{StaticResource MutedBrush}" FontSize="11" FontWeight="Bold" Margin="10,0,0,10"/>
+                    <StackPanel Grid.Row="1">
+                        <Button Content="Itens" HorizontalContentAlignment="Left" Command="{Binding NavigateCommand}" CommandParameter="Itens" Margin="0,0,0,6"/>
+                        <Button Content="Storages" HorizontalContentAlignment="Left" Command="{Binding NavigateCommand}" CommandParameter="Storages" Margin="0,0,0,6"/>
+                        <Button Content="Player Storage" HorizontalContentAlignment="Left" Command="{Binding NavigateCommand}" CommandParameter="PlayerStorage" Margin="0,0,0,6"/>
+                        <Button Content="Totais" HorizontalContentAlignment="Left" Command="{Binding NavigateCommand}" CommandParameter="Totais" Margin="0,0,0,6"/>
+                        <Button Content="Diagnóstico" HorizontalContentAlignment="Left" Command="{Binding NavigateCommand}" CommandParameter="Diagnostico"/>
+                    </StackPanel>
+                    <Border Grid.Row="3" Background="#111C2B" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="10" Padding="12">
+                        <StackPanel>
+                            <TextBlock Text="SAVE ABERTO" Foreground="{StaticResource AccentBrush}" FontSize="10" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding FileName}" FontWeight="SemiBold" Margin="0,6,0,0" TextTrimming="CharacterEllipsis"/>
+                            <TextBlock Text="{Binding RootType}" Foreground="{StaticResource MutedBrush}" FontSize="11" Margin="0,2,0,8"/>
+                            <TextBlock Text="{Binding FileSize}" Foreground="{StaticResource MutedBrush}" FontSize="11"/>
+                            <TextBlock Text="{Binding ItemCount, StringFormat={}{0} itens}" Foreground="{StaticResource MutedBrush}" FontSize="11"/>
+                            <TextBlock Text="{Binding StorageSummary}" Foreground="{StaticResource AccentBrush}" FontSize="11"/>
+                            <TextBlock Text="{Binding PlayerStorageSummary}" Foreground="{StaticResource AccentBrush}" FontSize="11"/>
+                            <TextBlock Text="{Binding LastModified}" Foreground="{StaticResource MutedBrush}" FontSize="11"/>
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </Border>
+
+            <Grid Grid.Row="1" Grid.Column="1" Margin="24,20">
+                <Grid>
+                    <Grid.Style><Style TargetType="Grid"><Setter Property="Visibility" Value="Collapsed"/><Style.Triggers><DataTrigger Binding="{Binding ActivePage}" Value="Itens"><Setter Property="Visibility" Value="Visible"/></DataTrigger></Style.Triggers></Style></Grid.Style>
+                    <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+                    <Grid>
+                        <Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition Width="420"/></Grid.ColumnDefinitions>
+                        <StackPanel><TextBlock Text="Itens" FontSize="28" FontWeight="SemiBold"/><TextBlock Text="Todas as ocorrências reais encontradas no arquivo" Foreground="{StaticResource MutedBrush}" Margin="0,4,0,0"/></StackPanel>
+                        <TextBox Grid.Column="1" Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" ToolTip="Pesquise por nome, ID ou localização"/>
+                    </Grid>
+                    <Border Grid.Row="1" Background="#101A28" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="10" Padding="12,10" Margin="0,18,0,12">
+                        <WrapPanel>
+                            <StackPanel Width="190" Margin="0,0,12,0">
+                                <TextBlock Text="LOCAL" Foreground="{StaticResource MutedBrush}" FontSize="10" FontWeight="Bold" Margin="2,0,0,5"/>
+                                <ComboBox ItemsSource="{Binding LocationFilters}" SelectedItem="{Binding SelectedLocationFilter}"/>
+                            </StackPanel>
+                            <StackPanel Width="210" Margin="0,0,12,0">
+                                <TextBlock Text="TIPO DO ITEM" Foreground="{StaticResource MutedBrush}" FontSize="10" FontWeight="Bold" Margin="2,0,0,5"/>
+                                <ComboBox ItemsSource="{Binding TypeFilters}" SelectedItem="{Binding SelectedTypeFilter}"/>
+                            </StackPanel>
+                            <StackPanel Width="180" Margin="0,0,12,0">
+                                <TextBlock Text="EXIBIR" Foreground="{StaticResource MutedBrush}" FontSize="10" FontWeight="Bold" Margin="2,0,0,5"/>
+                                <ComboBox ItemsSource="{Binding VisibilityFilters}" SelectedItem="{Binding SelectedVisibilityFilter}"/>
+                            </StackPanel>
+                            <StackPanel Width="165">
+                                <TextBlock Text="ORDENAR POR" Foreground="{StaticResource MutedBrush}" FontSize="10" FontWeight="Bold" Margin="2,0,0,5"/>
+                                <ComboBox ItemsSource="{Binding SortOptions}" SelectedItem="{Binding SelectedSort}"/>
+                            </StackPanel>
+                        </WrapPanel>
+                    </Border>
+                    <Border Grid.Row="2" Background="#101A28" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="10" Padding="10" Margin="0,0,0,12">
+                        <Grid>
+                            <Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+                            <WrapPanel>
+                                <Button Content="Selecionar materiais de construção" Command="{Binding SelectMaterialsCommand}" Margin="0,0,8,0"/>
+                                <Button Content="Limpar seleção" Command="{Binding ClearSelectionCommand}"/>
+                            </WrapPanel>
+                            <Button Grid.Column="1" Content="Excluir selecionados" Command="{Binding DeleteSelectedCommand}" Style="{StaticResource DangerButton}"
+                                    ToolTip="Limpa os itens marcados dos respectivos slots. A exclusão só é gravada ao salvar."/>
+                        </Grid>
+                    </Border>
+                    <DataGrid Grid.Row="3" ItemsSource="{Binding ItemsView}">
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn Width="44"><DataGridTemplateColumn.CellTemplate><DataTemplate><CheckBox IsChecked="{Binding IsSelected, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center"/></DataTemplate></DataGridTemplateColumn.CellTemplate></DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="Item" Width="2*"><DataGridTemplateColumn.CellTemplate><DataTemplate>
+                                <Button Style="{StaticResource LinkButton}" Click="ItemButton_Click">
+                                    <StackPanel Orientation="Horizontal"><Image Source="{Binding IconPath}" Width="30" Height="30" Stretch="Uniform" Margin="0,0,8,0"/><TextBlock Text="{Binding Name}" VerticalAlignment="Center"/></StackPanel>
+                                    <Button.ToolTip><StackPanel><TextBlock Text="{Binding Type}" FontWeight="SemiBold"/><TextBlock Text="{Binding StackLimitText, StringFormat=Stack máximo: {0}}"/><TextBlock Text="{Binding UsesLimitText, StringFormat=Uses máximo: {0}}"/></StackPanel></Button.ToolTip>
+                                </Button>
+                            </DataTemplate></DataGridTemplateColumn.CellTemplate></DataGridTemplateColumn>
+                            <DataGridTextColumn Header="ID" Binding="{Binding ItemId}" Width="75" IsReadOnly="True"/>
+                            <DataGridTextColumn Header="Quantidade" Binding="{Binding Amount}" Width="110" IsReadOnly="True"/>
+                            <DataGridTextColumn Header="Stack máx." Binding="{Binding StackLimitText}" Width="95" IsReadOnly="True"/>
+                            <DataGridTextColumn Header="Uses" Binding="{Binding Uses}" Width="85" IsReadOnly="True"/>
+                            <DataGridTextColumn Header="Uses máx." Binding="{Binding UsesLimitText}" Width="90" IsReadOnly="True"/>
+                            <DataGridTemplateColumn Header="Local" Width="1.4*"><DataGridTemplateColumn.CellTemplate><DataTemplate>
+                                <Button Content="{Binding Location}" Style="{StaticResource LinkButton}" IsEnabled="{Binding IsStorage}" Click="LocationButton_Click"/>
+                            </DataTemplate></DataGridTemplateColumn.CellTemplate></DataGridTemplateColumn>
+                            <DataGridTextColumn Header="Slot" Binding="{Binding SlotIndex}" Width="70" IsReadOnly="True"/>
+                            <DataGridCheckBoxColumn Header="Alterado" Binding="{Binding IsModified, Mode=OneWay}" Width="80" IsReadOnly="True"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <TextBlock Grid.Row="4" Text="Clique no nome do item para editar. Clique no local para abrir o storage completo." Foreground="{StaticResource MutedBrush}" FontSize="11" Margin="2,8,0,0"/>
+                </Grid>
+
+                <Grid>
+                    <Grid.Style><Style TargetType="Grid"><Setter Property="Visibility" Value="Collapsed"/><Style.Triggers><DataTrigger Binding="{Binding ActivePage}" Value="Totais"><Setter Property="Visibility" Value="Visible"/></DataTrigger></Style.Triggers></Style></Grid.Style>
+                    <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+                    <StackPanel><TextBlock Text="Totais" FontSize="28" FontWeight="SemiBold"/><TextBlock Text="Soma de todas as ocorrências por Item ID" Foreground="{StaticResource MutedBrush}" Margin="0,4,0,18"/></StackPanel>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions><ColumnDefinition Width="1.05*"/><ColumnDefinition Width="18"/><ColumnDefinition Width="1*"/></Grid.ColumnDefinitions>
+                        <DataGrid ItemsSource="{Binding Totals}" SelectedItem="{Binding SelectedTotal}">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Item" Binding="{Binding Name}" Width="*" IsReadOnly="True"/>
+                                <DataGridTextColumn Header="ID" Binding="{Binding ItemId}" Width="65" IsReadOnly="True"/>
+                                <DataGridTextColumn Header="Total" Binding="{Binding Total}" Width="90" IsReadOnly="True"/>
+                                <DataGridTextColumn Header="Ocorrências" Binding="{Binding OccurrenceCount}" Width="100" IsReadOnly="True"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Grid Grid.Column="2">
+                            <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition/></Grid.RowDefinitions>
+                            <TextBlock Text="{Binding SelectedTotal.Name, TargetNullValue=Selecione um item}" FontSize="20" FontWeight="SemiBold"/>
+                            <TextBlock Grid.Row="1" Text="{Binding SelectedTotal.Locations}" Foreground="{StaticResource MutedBrush}" TextWrapping="Wrap" Margin="0,5,0,14"/>
+                            <DataGrid Grid.Row="2" ItemsSource="{Binding TotalOccurrences}">
+                                <DataGrid.Columns>
+                                    <DataGridTemplateColumn Header="Local" Width="*"><DataGridTemplateColumn.CellTemplate><DataTemplate>
+                                        <Button Content="{Binding Location}" Style="{StaticResource LinkButton}" IsEnabled="{Binding IsStorage}" Click="LocationButton_Click"/>
+                                    </DataTemplate></DataGridTemplateColumn.CellTemplate></DataGridTemplateColumn>
+                                    <DataGridTextColumn Header="Quantidade" Binding="{Binding Amount}" Width="105" IsReadOnly="True"/>
+                                    <DataGridTextColumn Header="Slot" Binding="{Binding SlotIndex}" Width="70" IsReadOnly="True"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+
+                <Grid>
+                    <Grid.Style><Style TargetType="Grid"><Setter Property="Visibility" Value="Collapsed"/><Style.Triggers><DataTrigger Binding="{Binding ActivePage}" Value="Storages"><Setter Property="Visibility" Value="Visible"/></DataTrigger></Style.Triggers></Style></Grid.Style>
+                    <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+                    <StackPanel>
+                        <TextBlock Text="Storages" FontSize="28" FontWeight="SemiBold"/>
+                        <TextBlock Text="{Binding StorageSummary}" Foreground="{StaticResource AccentBrush}" Margin="0,4,0,18"/>
+                    </StackPanel>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions><ColumnDefinition Width="330"/><ColumnDefinition Width="18"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+                        <DataGrid ItemsSource="{Binding Storages}" SelectedItem="{Binding SelectedStorage}" IsReadOnly="True" MouseDoubleClick="StoragesGrid_MouseDoubleClick">
+                            <DataGrid.Columns>
+                                <DataGridTemplateColumn Width="38"><DataGridTemplateColumn.CellTemplate><DataTemplate><CheckBox IsChecked="{Binding IsSelected, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" ToolTip="Marcar para ações em lote"/></DataTemplate></DataGridTemplateColumn.CellTemplate></DataGridTemplateColumn>
+                                <DataGridTemplateColumn Header="Storage" Width="*"><DataGridTemplateColumn.CellTemplate><DataTemplate>
+                                    <Button Content="{Binding Name}" Style="{StaticResource LinkButton}" Click="StorageButton_Click"/>
+                                </DataTemplate></DataGridTemplateColumn.CellTemplate></DataGridTemplateColumn>
+                                <DataGridTextColumn Header="Ocupação" Binding="{Binding OccupancyText}" Width="145"/>
+                                <DataGridTextColumn Header="Unidades" Binding="{Binding TotalUnits}" Width="80"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Grid Grid.Column="2">
+                            <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition/></Grid.RowDefinitions>
+                            <TextBlock Text="{Binding SelectedStorage.Name, TargetNullValue=Selecione um storage}" FontSize="22" FontWeight="SemiBold"/>
+                            <WrapPanel Grid.Row="1" Margin="0,5,0,12">
+                                <TextBlock Text="{Binding SelectedStorage.OccupancyText}" Foreground="{StaticResource MutedBrush}" Margin="0,0,18,0"/>
+                                <TextBlock Text="{Binding SelectedStorage.TotalUnits, StringFormat={}{0} unidades no total}" Foreground="{StaticResource AccentBrush}"/>
+                            </WrapPanel>
+                            <Border Grid.Row="2" Background="#101A28" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="10" Padding="9" Margin="0,0,0,12">
+                                <StackPanel>
+                                  <WrapPanel>
+                                    <Button Content="Adicionar item" Click="AddItemToStorageButton_Click" CommandParameter="{Binding SelectedStorage}" Margin="0,0,8,0"
+                                            ToolTip="Preenche o próximo slot vazio usando o StackSize e Uses máximos do item."/>
+                                    <Button Content="Colocar todos no máximo" Command="{Binding MaximizeStorageItemsCommand}" Style="{StaticResource PrimaryButton}" Margin="0,0,10,0"
+                                            ToolTip="Aplica a todos os itens deste storage o StackSize definido para cada item."/>
+                                    <TextBlock Text="Não requer seleção; respeita o StackSize de cada item" Foreground="{StaticResource MutedBrush}" VerticalAlignment="Center" Margin="0,0,14,0"/>
+                                    <Button Content="Limpar seleção" Command="{Binding ClearSelectionCommand}"/>
+                                  </WrapPanel>
+                                  <WrapPanel Margin="0,8,0,0">
+                                    <Button Content="Adicionar / encher marcados" Click="AddItemsToSelectedStorages_Click" Margin="0,0,8,0" ToolTip="Distribui um item ou uma lista pelos slots livres dos storages marcados."/>
+                                    <Button Content="Maximizar marcados" Command="{Binding MaximizeSelectedStoragesCommand}" Margin="0,0,8,0"/>
+                                    <Button Content="Organizar por categoria" Command="{Binding OrganizeSelectedStoragesCommand}" Margin="0,0,8,0"/>
+                                    <Button Content="Remover inválidos" Command="{Binding RemoveInvalidItemsCommand}" Style="{StaticResource DangerButton}" Margin="0,0,8,0"/>
+                                  </WrapPanel>
+                                </StackPanel>
+                            </Border>
+                            <Border Grid.Row="3" Background="#101A28" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="10" Padding="9" Margin="0,0,0,12">
+                                <Grid><Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition Width="Auto"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+                                    <ComboBox ItemsSource="{Binding Presets}" SelectedItem="{Binding SelectedPreset}" MinWidth="220" Margin="0,0,8,0"/>
+                                    <Button Grid.Column="1" Content="Aplicar preset" Command="{Binding ApplyPresetCommand}" Style="{StaticResource PrimaryButton}" Margin="0,0,8,0" ToolTip="Aplica a lista aos storages marcados, respeitando os slots livres."/>
+                                    <Button Grid.Column="2" Content="Salvar seleção como preset" Command="{Binding SaveCustomPresetCommand}"/>
+                                </Grid>
+                            </Border>
+                            <DataGrid Grid.Row="4" ItemsSource="{Binding StorageItems}" MouseDoubleClick="ItemsGrid_MouseDoubleClick">
+                                <DataGrid.Columns>
+                                    <DataGridTemplateColumn Width="42"><DataGridTemplateColumn.CellTemplate><DataTemplate><CheckBox IsChecked="{Binding IsSelected, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center"/></DataTemplate></DataGridTemplateColumn.CellTemplate></DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Item" Width="*"><DataGridTemplateColumn.CellTemplate><DataTemplate>
+                                        <Button Style="{StaticResource LinkButton}" Click="ItemButton_Click" ToolTip="{Binding Type}"><StackPanel Orientation="Horizontal"><Image Source="{Binding IconPath}" Width="28" Height="28" Stretch="Uniform" Margin="0,0,7,0"/><TextBlock Text="{Binding Name}" VerticalAlignment="Center"/></StackPanel></Button>
+                                    </DataTemplate></DataGridTemplateColumn.CellTemplate></DataGridTemplateColumn>
+                                    <DataGridTextColumn Header="ID" Binding="{Binding ItemId}" Width="65" IsReadOnly="True"/>
+                                    <DataGridTextColumn Header="Quantidade" Binding="{Binding Amount}" Width="105" IsReadOnly="True"/>
+                                    <DataGridTextColumn Header="Máx." Binding="{Binding StackLimitText}" Width="90" IsReadOnly="True"/>
+                                    <DataGridTextColumn Header="Uses" Binding="{Binding Uses}" Width="75" IsReadOnly="True"/>
+                                    <DataGridTextColumn Header="Slot" Binding="{Binding SlotIndex}" Width="65" IsReadOnly="True"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+
+                <Grid>
+                    <Grid.Style><Style TargetType="Grid"><Setter Property="Visibility" Value="Collapsed"/><Style.Triggers><DataTrigger Binding="{Binding ActivePage}" Value="Diagnostico"><Setter Property="Visibility" Value="Visible"/></DataTrigger></Style.Triggers></Style></Grid.Style>
+                    <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition/></Grid.RowDefinitions>
+                    <Grid>
+                        <Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+                        <StackPanel><TextBlock Text="Diagnóstico" FontSize="28" FontWeight="SemiBold"/><TextBlock Text="Estado do editor, do save e do conector ao vivo" Foreground="{StaticResource MutedBrush}" Margin="0,4,0,18"/></StackPanel>
+                        <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Top">
+                            <Button Content="Atualizar diagnóstico" Click="RefreshDiagnostics_Click" Margin="0,0,8,0"/>
+                            <Button Content="Exportar cópia manual" Command="{Binding ExportSaveCopyCommand}" Style="{StaticResource PrimaryButton}"/>
+                        </StackPanel>
+                    </Grid>
+                    <UniformGrid Grid.Row="1" Columns="3" Margin="0,0,0,16">
+                        <Border Background="#101A28" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="10" Padding="16" Margin="0,0,8,0"><StackPanel><TextBlock Text="MODO" Foreground="{StaticResource MutedBrush}" FontSize="10" FontWeight="Bold"/><TextBlock Text="{Binding EditorMode}" FontSize="17" Foreground="{StaticResource AccentBrush}" Margin="0,6,0,0"/><TextBlock Text="{Binding FilePath}" TextWrapping="Wrap" Foreground="{StaticResource MutedBrush}" FontSize="11" Margin="0,5,0,0"/></StackPanel></Border>
+                        <Border Background="#101A28" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="10" Padding="16" Margin="4,0"><StackPanel><TextBlock Text="JOGO" Foreground="{StaticResource MutedBrush}" FontSize="10" FontWeight="Bold"/><TextBlock Text="{Binding GameStatus}" FontSize="17" Margin="0,6,0,0"/><TextBlock Text="{Binding GameVersion, StringFormat=Versão: {0}}" Foreground="{StaticResource MutedBrush}" FontSize="11" Margin="0,5,0,0"/></StackPanel></Border>
+                        <Border Background="#101A28" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="10" Padding="16" Margin="8,0,0,0"><StackPanel><TextBlock Text="CONECTOR" Foreground="{StaticResource MutedBrush}" FontSize="10" FontWeight="Bold"/><TextBlock Text="{Binding ConnectorStatus}" FontSize="17" TextWrapping="Wrap" Margin="0,6,0,0"/><TextBlock Text="Somente local · modo ao vivo" Foreground="{StaticResource MutedBrush}" FontSize="11" Margin="0,5,0,0"/></StackPanel></Border>
+                    </UniformGrid>
+                    <Grid Grid.Row="2"><Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition Width="16"/><ColumnDefinition/></Grid.ColumnDefinitions>
+                        <Border Background="#101A28" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="10" Padding="18"><StackPanel>
+                            <TextBlock Text="RESUMO OFFLINE" Foreground="{StaticResource MutedBrush}" FontSize="10" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding ItemCount, StringFormat=Itens detectados: {0}}" Margin="0,12,0,4"/><TextBlock Text="{Binding StorageCount, StringFormat=Storages: {0}}" Margin="0,0,0,4"/><TextBlock Text="{Binding PlayerStorageCount, StringFormat=Player storages: {0}}" Margin="0,0,0,4"/><TextBlock Text="{Binding PendingChanges, StringFormat=Alterações pendentes: {0}}"/>
+                            <Separator Margin="0,15"/><TextBlock Text="{Binding AppVersion, StringFormat=Raft Save Editor v{0}}"/><TextBlock Text="{Binding CatalogItemCount, StringFormat=Catálogo local: {0} itens}" Foreground="{StaticResource MutedBrush}" Margin="0,4,0,0"/><TextBlock Text="{Binding LogPath}" Foreground="{StaticResource MutedBrush}" TextWrapping="Wrap" FontSize="11" Margin="0,6,0,0"/>
+                        </StackPanel></Border>
+                        <Border Grid.Column="2" Background="#101A28" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="10" Padding="18"><StackPanel>
+                            <TextBlock Text="ÚLTIMA OPERAÇÃO" Foreground="{StaticResource MutedBrush}" FontSize="10" FontWeight="Bold"/><TextBlock Text="{Binding LastOperation}" TextWrapping="Wrap" Margin="0,9,0,18"/>
+                            <TextBlock Text="ÚLTIMO ERRO" Foreground="{StaticResource MutedBrush}" FontSize="10" FontWeight="Bold"/><TextBlock Text="{Binding LastError}" TextWrapping="Wrap" Foreground="#FF9B91" Margin="0,9,0,0"/>
+                            <TextBlock Text="O editor não cria backups automaticamente. Use Exportar cópia manual quando quiser." Foreground="{StaticResource AccentBrush}" TextWrapping="Wrap" Margin="0,24,0,0"/>
+                        </StackPanel></Border>
+                    </Grid>
+                </Grid>
+
+                <Grid>
+                    <Grid.Style><Style TargetType="Grid"><Setter Property="Visibility" Value="Collapsed"/><Style.Triggers><DataTrigger Binding="{Binding ActivePage}" Value="PlayerStorage"><Setter Property="Visibility" Value="Visible"/></DataTrigger></Style.Triggers></Style></Grid.Style>
+                    <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+                    <StackPanel>
+                        <TextBlock Text="Player Storage" FontSize="28" FontWeight="SemiBold"/>
+                        <TextBlock Text="{Binding PlayerStorageSummary}" Foreground="{StaticResource AccentBrush}" Margin="0,4,0,18"/>
+                    </StackPanel>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions><ColumnDefinition Width="400"/><ColumnDefinition Width="18"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+                        <DataGrid ItemsSource="{Binding PlayerStorages}" SelectedItem="{Binding SelectedPlayerStorage}" IsReadOnly="True" MouseDoubleClick="StoragesGrid_MouseDoubleClick">
+                            <DataGrid.Columns>
+                                <DataGridTemplateColumn Header="Jogador / inventário" Width="*"><DataGridTemplateColumn.CellTemplate><DataTemplate>
+                                    <StackPanel>
+                                        <Button Content="{Binding Name}" Style="{StaticResource LinkButton}" Click="StorageButton_Click"/>
+                                        <TextBlock Text="{Binding PlayerAreaSummary}" Foreground="{StaticResource MutedBrush}" FontSize="11" Margin="2,1,0,0"/>
+                                    </StackPanel>
+                                </DataTemplate></DataGridTemplateColumn.CellTemplate></DataGridTemplateColumn>
+                                <DataGridTextColumn Header="Ocupação" Binding="{Binding OccupancyText}" Width="140"/>
+                                <DataGridTextColumn Header="Unid." Binding="{Binding TotalUnits}" Width="62"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Grid Grid.Column="2">
+                            <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition/></Grid.RowDefinitions>
+                            <TextBlock Text="{Binding SelectedPlayerStorage.Name, TargetNullValue=Selecione um player storage}" FontSize="22" FontWeight="SemiBold"/>
+                            <WrapPanel Grid.Row="1" Margin="0,5,0,12">
+                                <TextBlock Text="{Binding SelectedPlayerStorage.OccupancyText}" Foreground="{StaticResource MutedBrush}" Margin="0,0,18,0"/>
+                                <TextBlock Text="{Binding SelectedPlayerStorage.TotalUnits, StringFormat={}{0} unidades no total}" Foreground="{StaticResource AccentBrush}"/>
+                            </WrapPanel>
+                            <Border Grid.Row="2" Background="#101A28" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="10" Padding="9" Margin="0,0,0,12">
+                                <WrapPanel>
+                                    <Button Content="Adicionar item" Click="AddItemToStorageButton_Click" CommandParameter="{Binding SelectedPlayerStorage}" Margin="0,0,8,0"
+                                            ToolTip="Adiciona no próximo slot vazio usando quantidade e Uses máximos do item."/>
+                                    <Button Content="Colocar todos no máximo" Command="{Binding MaximizePlayerStorageItemsCommand}" Style="{StaticResource PrimaryButton}" Margin="0,0,10,0"
+                                            ToolTip="Aplica a todos os itens deste player storage o StackSize definido para cada item."/>
+                                    <Button Content="Excluir selecionados" Command="{Binding DeleteSelectedCommand}" Style="{StaticResource DangerButton}" Margin="0,0,8,0"
+                                            ToolTip="Remove do inventário os itens marcados na primeira coluna."/>
+                                    <Button Content="Limpar seleção" Command="{Binding ClearSelectionCommand}"/>
+                                </WrapPanel>
+                            </Border>
+                            <DataGrid Grid.Row="3" ItemsSource="{Binding PlayerStorageItemsView}" MouseDoubleClick="ItemsGrid_MouseDoubleClick">
+                                <DataGrid.GroupStyle>
+                                    <GroupStyle>
+                                        <GroupStyle.HeaderTemplate>
+                                            <DataTemplate>
+                                                <Border Background="#18283A" BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,1,0,1" Padding="12,8">
+                                                    <TextBlock Text="{Binding Name}" Foreground="{StaticResource AccentBrush}" FontWeight="SemiBold"/>
+                                                </Border>
+                                            </DataTemplate>
+                                        </GroupStyle.HeaderTemplate>
+                                    </GroupStyle>
+                                </DataGrid.GroupStyle>
+                                <DataGrid.Columns>
+                                    <DataGridTemplateColumn Width="42"><DataGridTemplateColumn.CellTemplate><DataTemplate><CheckBox IsChecked="{Binding IsSelected, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center"/></DataTemplate></DataGridTemplateColumn.CellTemplate></DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Item" Width="*"><DataGridTemplateColumn.CellTemplate><DataTemplate>
+                                        <Button Style="{StaticResource LinkButton}" Click="ItemButton_Click" ToolTip="{Binding Type}"><StackPanel Orientation="Horizontal"><Image Source="{Binding IconPath}" Width="28" Height="28" Stretch="Uniform" Margin="0,0,7,0"/><TextBlock Text="{Binding Name}" VerticalAlignment="Center"/></StackPanel></Button>
+                                    </DataTemplate></DataGridTemplateColumn.CellTemplate></DataGridTemplateColumn>
+                                    <DataGridTextColumn Header="ID" Binding="{Binding ItemId}" Width="65" IsReadOnly="True"/>
+                                    <DataGridTextColumn Header="Quantidade" Binding="{Binding Amount}" Width="105" IsReadOnly="True"/>
+                                    <DataGridTextColumn Header="Máx." Binding="{Binding StackLimitText}" Width="90" IsReadOnly="True"/>
+                                    <DataGridTextColumn Header="Uses" Binding="{Binding Uses}" Width="75" IsReadOnly="True"/>
+                                    <DataGridTextColumn Header="Posição" Binding="{Binding DisplaySlot}" Width="85" IsReadOnly="True"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+
+            <Border Grid.Row="2" Grid.ColumnSpan="2" Background="#0E1622" BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,1,0,0">
+                <Grid Margin="16,0"><Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+                    <TextBlock Text="{Binding Status}" Foreground="{StaticResource MutedBrush}" VerticalAlignment="Center"/>
+                    <TextBlock Grid.Column="1" Text="{Binding FilePath}" Foreground="{StaticResource MutedBrush}" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" MaxWidth="650"/>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,80 @@
+<Window x:Class="RaftSaveEditor.App.LiveGameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Modo AO VIVO — Raft Save Editor" Icon="/Assets/Items/Steering_Wheel.png" Width="1180" Height="720" MinWidth="900" MinHeight="560"
+        WindowStartupLocation="CenterOwner" ShowInTaskbar="False">
+    <Grid>
+        <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition/><RowDefinition Height="46"/></Grid.RowDefinitions>
+        <Border Background="#0E1724" BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,0,0,1" Padding="22,16">
+            <Grid><Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+                <StackPanel>
+                    <TextBlock Text="MODO AO VIVO · Raft" FontSize="28" FontWeight="SemiBold"/>
+                    <TextBlock Text="Conectado somente neste computador · alterações são salvas pelo próprio jogo" Foreground="{StaticResource AccentBrush}" Margin="0,4,0,0"/>
+                </StackPanel>
+                <Button Grid.Column="1" Content="Atualizar do jogo" Click="Refresh_Click" VerticalAlignment="Center"/>
+            </Grid>
+        </Border>
+        <Grid Grid.Row="1" Margin="22,18">
+            <Grid.ColumnDefinitions><ColumnDefinition Width="330"/><ColumnDefinition Width="18"/><ColumnDefinition/></Grid.ColumnDefinitions>
+            <DataGrid x:Name="ContainersGrid" IsReadOnly="True" SelectionChanged="ContainersGrid_SelectionChanged">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Header="Inventário / storage" Width="*">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding Name}"/>
+                                    <TextBlock Text="{Binding PlayerAreaSummary}" Foreground="{StaticResource MutedBrush}" FontSize="11" Margin="0,2,0,0">
+                                        <TextBlock.Style>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="Visibility" Value="Collapsed"/>
+                                                <Style.Triggers><DataTrigger Binding="{Binding IsPlayer}" Value="True"><Setter Property="Visibility" Value="Visible"/></DataTrigger></Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="Ocupação" Binding="{Binding OccupancyText}" Width="115"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition/></Grid.RowDefinitions>
+                <StackPanel>
+                    <TextBlock x:Name="ContainerNameText" Text="Selecione um inventário" FontSize="23" FontWeight="SemiBold"/>
+                    <WrapPanel Margin="0,5,0,0">
+                        <TextBlock x:Name="OccupancyText" Foreground="{StaticResource MutedBrush}" Margin="0,0,18,0"/>
+                        <TextBlock x:Name="TotalText" Foreground="{StaticResource AccentBrush}"/>
+                    </WrapPanel>
+                    <TextBlock x:Name="PlayerAreasText" Foreground="{StaticResource MutedBrush}" Margin="0,5,0,0"/>
+                </StackPanel>
+                <Border Grid.Row="1" Background="#101A28" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" CornerRadius="10" Padding="9" Margin="0,14,0,12">
+                    <WrapPanel>
+                        <Button x:Name="AddButton" Content="Adicionar item" Click="Add_Click" Margin="0,0,8,0"/>
+                        <Button x:Name="MaxButton" Content="Colocar todos no máximo" Style="{StaticResource PrimaryButton}" Click="Max_Click" Margin="0,0,8,0"/>
+                        <Button x:Name="RemoveButton" Content="Remover item selecionado" Style="{StaticResource DangerButton}" Click="Remove_Click" IsEnabled="False" Margin="0,0,8,0"/>
+                        <TextBlock Text="Clique ou dê duplo clique no item para editar ou excluir." Foreground="{StaticResource MutedBrush}" VerticalAlignment="Center" Margin="8,0,0,0"/>
+                    </WrapPanel>
+                </Border>
+                <DataGrid x:Name="ItemsGrid" Grid.Row="2" IsReadOnly="True" SelectionChanged="ItemsGrid_SelectionChanged" MouseDoubleClick="ItemsGrid_MouseDoubleClick">
+                    <DataGrid.GroupStyle><GroupStyle><GroupStyle.HeaderTemplate><DataTemplate>
+                        <Border Background="#18283A" BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,1,0,1" Padding="12,8"><TextBlock Text="{Binding Name}" Foreground="{StaticResource AccentBrush}" FontWeight="SemiBold"/></Border>
+                    </DataTemplate></GroupStyle.HeaderTemplate></GroupStyle></DataGrid.GroupStyle>
+                    <DataGrid.Columns>
+                        <DataGridTemplateColumn Header="Item" Width="*"><DataGridTemplateColumn.CellTemplate><DataTemplate>
+                            <Button Style="{StaticResource LinkButton}" Click="ItemButton_Click"><StackPanel Orientation="Horizontal"><Image Source="{Binding IconPath}" Width="28" Height="28" Stretch="Uniform" Margin="0,0,7,0"/><TextBlock Text="{Binding Name}" VerticalAlignment="Center"/></StackPanel></Button>
+                        </DataTemplate></DataGridTemplateColumn.CellTemplate></DataGridTemplateColumn>
+                        <DataGridTextColumn Header="ID" Binding="{Binding ItemId}" Width="58"/>
+                        <DataGridTextColumn Header="Quantidade" Binding="{Binding Amount}" Width="95"/>
+                        <DataGridTextColumn Header="Máx." Binding="{Binding MaxStack}" Width="58"/>
+                        <DataGridTextColumn Header="Uses" Binding="{Binding Uses}" Width="60"/>
+                        <DataGridTextColumn Header="Posição" Binding="{Binding DisplaySlot}" Width="82"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Grid>
+        <Border Grid.Row="2" Background="#0E1622" BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,1,0,0">
+            <Grid Margin="18,0"><TextBlock x:Name="StatusText" Foreground="{StaticResource MutedBrush}" VerticalAlignment="Center"/><Button Content="Fechar" HorizontalAlignment="Right" IsCancel="True"/></Grid>
+        </Border>
+    </Grid>
+</Window>

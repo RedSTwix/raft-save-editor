@@ -1,0 +1,29 @@
+<Window x:Class="RaftSaveEditor.App.SavePickerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Saves encontrados" Width="820" Height="520" MinWidth="700" MinHeight="420"
+        WindowStartupLocation="CenterOwner" ShowInTaskbar="False">
+    <Grid Margin="26">
+        <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+        <TextBlock Text="Saves encontrados" FontSize="28" FontWeight="SemiBold"/>
+        <TextBlock Grid.Row="1" Text="Selecione o arquivo que deseja abrir. A lista foi obtida automaticamente da instalação do Raft."
+                   Foreground="{StaticResource MutedBrush}" Margin="0,5,0,18"/>
+        <DataGrid x:Name="SavesGrid" Grid.Row="2" IsReadOnly="True" MouseDoubleClick="SavesGrid_MouseDoubleClick">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Save" Binding="{Binding Name}" Width="1.1*"/>
+                <DataGridTextColumn Header="Tipo" Binding="{Binding Type}" Width="110"/>
+                <DataGridTextColumn Header="Descrição" Binding="{Binding Description}" Width="2*"/>
+                <DataGridTextColumn Header="Tamanho" Binding="{Binding SizeText}" Width="90"/>
+                <DataGridTextColumn Header="Modificado" Binding="{Binding LastModifiedText}" Width="135"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Grid Grid.Row="3" Margin="0,18,0,0">
+            <Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+            <Button Content="Escolher outro arquivo..." HorizontalAlignment="Left" Click="Manual_Click"/>
+            <StackPanel Grid.Column="1" Orientation="Horizontal">
+                <Button Content="Cancelar" IsCancel="True" Margin="0,0,8,0"/>
+                <Button Content="Abrir selecionado" Style="{StaticResource PrimaryButton}" IsDefault="True" Click="Open_Click"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
