@@ -60,6 +60,15 @@ if ($Uninstall) {
         else { Remove-Item -LiteralPath $target -Force }
     }
     if (-not $WhatIf) {
+        foreach ($entry in $manifest.Files) {
+            $directory = Split-Path -Parent (Get-SafeTarget $entry.Path)
+            while ($directory.StartsWith($gamePrefix, [StringComparison]::OrdinalIgnoreCase) -and
+                   (Test-Path -LiteralPath $directory -PathType Container)) {
+                if (@(Get-ChildItem -LiteralPath $directory -Force).Count -ne 0) { break }
+                Remove-Item -LiteralPath $directory
+                $directory = Split-Path -Parent $directory
+            }
+        }
         if ($kept.Count -eq 0) { Remove-Item -LiteralPath $manifestPath -Force }
         else {
             $manifest.Files = @($manifest.Files | Where-Object { $_.Path -in $kept })
@@ -81,7 +90,11 @@ if ($present.Count -gt 0 -and $present.Count -ne $loaderPaths.Count) {
 }
 $useExistingLoader = $present.Count -eq $loaderPaths.Count
 if (-not $useExistingLoader -and (Test-Path -LiteralPath (Get-SafeTarget 'BepInEx'))) {
-    throw 'Pasta BepInEx parcial ou preexistente detectada. Nada foi alterado.'
+    $remainingFile = Get-ChildItem -LiteralPath (Get-SafeTarget 'BepInEx') -Recurse -File -Force |
+        Select-Object -First 1
+    if ($remainingFile) {
+        throw 'Pasta BepInEx parcial ou preexistente detectada. Nada foi alterado.'
+    }
 }
 
 if (-not (Test-Path -LiteralPath $pluginSource -PathType Leaf)) {
