@@ -7,7 +7,6 @@ using System.IO.Pipes;
 using System.Linq;
 using System.Reflection;
 using System.Threading;
-using BepInEx;
 using UnityEngine;
 
 namespace RaftSaveEditor.Connector;
@@ -23,12 +22,6 @@ public static class EntryPoint
         UnityEngine.Object.DontDestroyOnLoad(_connectorObject);
         _connectorObject.AddComponent<LiveConnectorPlugin>();
     }
-}
-
-[BepInPlugin(LiveConnectorPlugin.PluginId, LiveConnectorPlugin.PluginName, LiveConnectorPlugin.PluginVersion)]
-public sealed class PersistentConnectorPlugin : BaseUnityPlugin
-{
-    private void Awake() => EntryPoint.Initialize();
 }
 
 public sealed class LiveConnectorPlugin : MonoBehaviour
@@ -151,7 +144,7 @@ public sealed class LiveConnectorPlugin : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         _serverThread = new Thread(ServerLoop) { IsBackground = true, Name = "RaftSaveEditor IPC" };
         _serverThread.Start();
-        Debug.Log($"[Raft Save Editor] Conector v{ProtocolVersion} iniciado.");
+        Debug.Log($"[Raft Save Editor] Conector temporário v{ProtocolVersion} injetado após o carregamento do jogo.");
     }
 
     private void Update()

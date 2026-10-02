@@ -9,10 +9,6 @@
     <FileVersion>5.0.0.0</FileVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BepInEx">
-      <HintPath>$(MSBuildThisFileDirectory)..\..\.deps\bepinex-download\BepInEx\core\BepInEx.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>$(RaftGameDir)\Raft_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>false</Private>

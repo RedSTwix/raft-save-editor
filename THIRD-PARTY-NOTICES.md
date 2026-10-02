@@ -25,9 +25,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-## BepInEx
-
-The optional persistent connector installer downloads the official BepInEx
-5.4.23.5 Windows x64 package from its release page and verifies its SHA-256.
-The package is not committed to this repository. BepInEx is licensed under
-LGPL-2.1; see https://github.com/BepInEx/BepInEx for source and license.

@@ -23,7 +23,7 @@ Aplicativo desktop WPF v1.0 para editar itens dos saves `.rgd` do Raft e, opcion
 ## Modos de edição
 
 - **OFFLINE:** as mudanças ficam pendentes e só entram no `.rgd` após `Salvar alterações`.
-- **AO VIVO:** exige o Raft aberto e um mundo totalmente carregado. O editor usa o conector instalado no jogo quando disponível; se não houver um conector ativo, mantém a conexão temporária em memória como alternativa.
+- **AO VIVO:** exige o Raft aberto e um mundo totalmente carregado. O conector é temporário e atua somente no processo local do jogo.
 
 O editor não cria backup automático. O botão `Exportar cópia` cria uma cópia manual quando você desejar.
 
@@ -41,15 +41,7 @@ build.bat
 
 O resultado será `RaftSaveEditor.exe` na raiz. Os arquivos intermediários da publicação ficam em `publish`.
 
-O build detecta a instalação do jogo pelo processo aberto, bibliotecas Steam e pastas Downloads/Desktop. Se houver mais de uma instalação, defina `RAFT_GAME_DIR` com a pasta que contém `Raft.exe`. O build usa DLLs locais do Raft apenas como referências de compilação; elas não são incluídas no repositório. A dependência BepInEx vem do [release oficial 5.4.23.5](https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.5) e é verificada por SHA-256.
-
-## Conector permanente
-
-Feche o Raft e execute `install-connector.bat`. O instalador detecta o jogo, compila o conector se necessário e instala BepInEx mais o plugin. Se o BepInEx já estiver instalado por completo, adiciona apenas o plugin. Ele **não sobrescreve** DLLs, configurações ou mods preexistentes; se detectar uma instalação parcial ou conflito, interrompe sem alterar o jogo. Não modifica `OnlineFix64.dll`, `winmm.dll`, saves ou configurações do usuário.
-
-Após a instalação, reinicie o Raft e carregue o mundo; então use `Detectar jogo aberto` no editor. Para conferir o plano sem instalar, execute `install-connector.bat -WhatIf`. Para reverter, feche o jogo e execute `install-connector.bat -Uninstall`. A desinstalação remove somente arquivos registrados pelo instalador que ainda estejam inalterados. Para selecionar uma instalação específica, use `install-connector.bat -GameDir "C:\caminho\Raft"`.
-
-Como o carregamento permanente ocorre na inicialização do jogo, valide a abertura do save após instalar. Se houver problema, feche o jogo e use `-Uninstall`; a conexão temporária do editor continuará disponível.
+O build detecta a instalação do jogo pelo processo aberto, bibliotecas Steam e pastas Downloads/Desktop. Se houver mais de uma instalação, defina `RAFT_GAME_DIR` com a pasta que contém `Raft.exe`. O build usa DLLs locais do Raft apenas como referências de compilação; elas não são incluídas no repositório. Nenhum loader é instalado na pasta do jogo.
 
 ```powershell
 dotnet build RaftSaveEditor.sln

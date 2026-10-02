@@ -25,7 +25,7 @@ echo [1/4] Restaurando dependencias...
 dotnet restore "%PROJECT%" --nologo
 if errorlevel 1 goto :build_failed
 
-echo [2/4] Compilando conector para instalacao permanente e conexao temporaria...
+echo [2/4] Compilando conector temporario em memoria...
 if not defined RAFT_GAME_DIR (
     for /f "usebackq delims=" %%I in (`powershell -NoProfile -ExecutionPolicy Bypass -File "tools\Find-RaftGame.ps1"`) do set "RAFT_GAME_DIR=%%I"
 )
@@ -34,15 +34,11 @@ if not exist "%RAFT_GAME_DIR%\Raft_Data\Managed\UnityEngine.dll" (
     echo Defina RAFT_GAME_DIR antes de executar o build.
     goto :build_failed
 )
-powershell -NoProfile -ExecutionPolicy Bypass -File "tools\Get-BepInEx.ps1" >nul
-if errorlevel 1 goto :build_failed
 dotnet build "%CONNECTOR_PROJECT%" --configuration Release --nologo -p:RaftGameDir="%RAFT_GAME_DIR%"
 if errorlevel 1 goto :build_failed
 
 if not exist "src\RaftSaveEditor.App\Assets\Connector" mkdir "src\RaftSaveEditor.App\Assets\Connector"
 copy /Y "src\RaftSaveEditor.Connector\bin\Release\netstandard2.0\RaftSaveEditor.LiveConnector.V5.dll" "src\RaftSaveEditor.App\Assets\Connector\RaftSaveEditor.Connector.dll" >nul
-if errorlevel 1 goto :build_failed
-copy /Y "src\RaftSaveEditor.Connector\bin\Release\netstandard2.0\RaftSaveEditor.LiveConnector.V5.dll" "RaftSaveEditor.Connector.dll" >nul
 if errorlevel 1 goto :build_failed
 
 echo [3/4] Publicando executavel Windows x64...
